@@ -4,4 +4,28 @@
 
 ==Installation==
 
-Soon...
+  # Setup Wizard
+[http://img268.imageshack.us/img268/2482/44423437.jpg]
+
+  # License
+[http://img16.imageshack.us/img16/1641/55866448.jpg]
+
+  # Choose Components
+[http://img263.imageshack.us/img263/2454/56269879.jpg]
+
+  # Installation Directory
+[http://img593.imageshack.us/img593/8646/89593239.jpg]
+
+  # Installation Completed
+[http://img253.imageshack.us/img253/7641/39134374.jpg]
+
+==Uninstallation==
+
+  # If you already have installed MyC CS1.6
+[http://img263.imageshack.us/img263/4496/un1ru.jpg]
+
+  # Ready to uninstall
+[http://img502.imageshack.us/img502/2825/un2g.jpg]
+
+  # Uninstallation Completed
+[http://img263.imageshack.us/img263/3607/un3l.jpg]
