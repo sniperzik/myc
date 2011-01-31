@@ -1,0 +1,28 @@
+—– v3.0.0 —————————— 
+ * New NSIS Creator!
+ * Fixed HPK Bug
+ * Fixed MyC AC
+ * Fixed Reverse Mouse Bug
+ * Fixed Some Files Not Saved
+ * Fixed Several Bugs
+ * Updated Engine Custom & EC
+ * Updated Blood & Bullet Decals.wad
+ * Removed GameMenu
+ * Removed WC3 Alias & Engine
+ * Removed File Replacer
+ * Added File Backups
+ * Added 3 Types of Player Models
+ * Added MyC v3 GUI
+ * Included BGSS in AutoBuy Script
+
+—– v2.6.3 ——————————
+ * Fixed Uninstaller
+ * Fixed Replacer
+
+—– v2.6.2 ——————————
+ * Changed Config Name
+ * Fixed C4 Located script
+ * Updated Auto Buy script
+ * Updated MyC AC
+ * Updated MyC EB
+ * Added Weapon Alias list
