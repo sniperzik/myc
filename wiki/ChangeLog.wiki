@@ -1,4 +1,15 @@
 #labels Featured
+—– v3.0.0.9 —————————— 
+ * Added SetLaunchOptions.txt
+ * Added Black Sky
+ * Added Transparent Smoke Puff
+ * Updated ESL Models
+ * Updated Weapon Sprites
+ * Updated Config
+ * ??? Fixed Logo not showing on Steam
+
+P.S. DO NOT Click Ok or Apply in Options or you will save your settings and default valve logo will be applied.
+
 —– v3.0.0 —————————— 
  * New NSIS Creator!
  * Fixed HPK Bug
