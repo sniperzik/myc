@@ -7,7 +7,7 @@ Simple tool for CS1.6 to clean unnecessary Demo, Snapshot, Cache, Media and Logo
 [http://img189.imageshack.us/img189/8901/cleaner.png]
 
 ==Change Log==
- —– v1.0.7 ————————
+—– v1.0.7 ————————
  * Added Cleaning Crash Files
  * Increased Cleaning Speed
  * Updated TrayTips
