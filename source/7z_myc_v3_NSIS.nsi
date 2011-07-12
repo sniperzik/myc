@@ -26,15 +26,15 @@
  !include "FileFunc.nsh"
 	
 ; Define your application name
-!define APPVERS "3.0.1.10rc13" ; VERSION 
+!define APPVERS "3.0.1.10rc15" ; VERSION 
 !define APPNAME "MyC CS1.6"
 !define APPNAMEANDVERSION "${APPNAME} v${APPVERS}"
-!define APPYEAR "© 2011"
+!define APPYEAR "Â© 2011"
 !define APPWEB "MyC.Lv"
 !define APPAUTHOR "Sn^"
 !define APPPUBLISHER "MyC Project"
 
-VIProductVersion "3.0.1.10rc13" ; VERSION - No Spaces!!!
+VIProductVersion "3.0.1.10rc15" ; VERSION - No Spaces!!!
 VIAddVersionKey "ProductName" "${APPNAME}"
 VIAddVersionKey "Comments" ""
 VIAddVersionKey "CompanyName" "${APPWEB} ${APPYEAR} by ${APPAUTHOR}"
@@ -455,7 +455,7 @@ Section "MyC Config Core" Section1
 	!insertmacro BackupFile "$INSTDIR\cstrike\gfx\vgui\" "xm1014.tga" "$INSTDIR\MyC_Backup\cstrike\gfx\vgui\"
 	!insertmacro BackupFile "$INSTDIR\cstrike\gfx\" "palette.lmp" "$INSTDIR\MyC_Backup\cstrike\gfx\"
 	; Transparent Smoke
-	!insertmacro BackupFile "$INSTDIR\cstrike\sprites\" "gas_puff_01.spr" "$INSTDIR\MyC_Backup\cstrike\sprites\"
+	;!insertmacro BackupFile "$INSTDIR\cstrike\sprites\" "gas_puff_01.spr" "$INSTDIR\MyC_Backup\cstrike\sprites\"
 		
 	##########################
 	# Backup old copy * End
@@ -882,7 +882,7 @@ Section "MyC Config Core" Section1
 	Delete "$INSTDIR\cstrike\gfx\palette.lmp"
 	
 	; Transparent Smoke
-	Delete "$INSTDIR\cstrike\sprites\gas_puff_01.spr"
+	;Delete "$INSTDIR\cstrike\sprites\gas_puff_01.spr"
 		
 	##########################
 	# Install new copy
@@ -1083,22 +1083,22 @@ Section "Black Sky" Section9
 
 SectionEnd
 
-Section /o "Transparent Smoke Puff (Illegal)" Section10
+;Section /o "Transparent Smoke Puff (Illegal)" Section10
 
 	##########################
 	#Install new copy
 	##########################
 
 	; Set Section properties
-	SetOverwrite on
+;	SetOverwrite on
 
 	; Set Section Files and Shortcuts : Transparent Smoke Puff (Illegal)
-	SetOutPath "$INSTDIR\"
-	File "Additional Files\High FPS Pack v1\Transparent Smoke Puff (Illegal).7z"
-	Nsis7z::ExtractWithDetails "Transparent Smoke Puff (Illegal).7z" "Installing package %s..."
-	Delete "$INSTDIR\Transparent Smoke Puff (Illegal).7z"
+;	SetOutPath "$INSTDIR\"
+;	File "Additional Files\High FPS Pack v1\Transparent Smoke Puff (Illegal).7z"
+;	Nsis7z::ExtractWithDetails "Transparent Smoke Puff (Illegal).7z" "Installing package %s..."
+;	Delete "$INSTDIR\Transparent Smoke Puff (Illegal).7z"
 	
-SectionEnd
+;SectionEnd
 
 Section -FinishSection
 
@@ -1171,7 +1171,7 @@ SectionEnd
 	!insertmacro MUI_DESCRIPTION_TEXT ${Section7} ""
 	!insertmacro MUI_DESCRIPTION_TEXT ${Section8} ""
 	!insertmacro MUI_DESCRIPTION_TEXT ${Section9} ""
-	!insertmacro MUI_DESCRIPTION_TEXT ${Section10} ""
+	;!insertmacro MUI_DESCRIPTION_TEXT ${Section10} ""
 !insertmacro MUI_FUNCTION_DESCRIPTION_END
 
 ;Uninstall section
@@ -1599,7 +1599,7 @@ Section Uninstall
 	Delete "$INSTDIR\cstrike\gfx\palette.lmp"
 	
 	; Transparent Smoke
-	Delete "$INSTDIR\cstrike\sprites\gas_puff_01.spr"
+	;Delete "$INSTDIR\cstrike\sprites\gas_puff_01.spr"
 
 	; Remove remaining directories
 	;RMDir "$INSTDIR\valve\"
@@ -2070,7 +2070,7 @@ Section Uninstall
 	!insertmacro RestoreFile "$INSTDIR\MyC_Backup\cstrike\gfx\vgui\" "xm1014.tga" "$INSTDIR\cstrike\gfx\vgui\"
 	!insertmacro BackupFile "$INSTDIR\MyC_Backup\cstrike\gfx\" "palette.lmp" "$INSTDIR\cstrike\gfx\"
 	; Transparent Smoke
-	!insertmacro BackupFile "$INSTDIR\MyC_Backup\cstrike\sprites\" "gas_puff_01.spr" "$INSTDIR\cstrike\sprites\"
+	;!insertmacro BackupFile "$INSTDIR\MyC_Backup\cstrike\sprites\" "gas_puff_01.spr" "$INSTDIR\cstrike\sprites\"
 	
 	##########################
 	# Remove Backup
@@ -2414,7 +2414,7 @@ Section Uninstall
 	Delete "$INSTDIR\MyC_Backup\cstrike\gfx\vgui\vip.tga"
 	Delete "$INSTDIR\MyC_Backup\cstrike\gfx\vgui\xm1014.tga"
 	Delete "$INSTDIR\MyC_Backup\cstrike\gfx\palette.lmp"
-	Delete "$INSTDIR\MyC_Backup\cstrike\sprites\gas_puff_01.spr"
+	;Delete "$INSTDIR\MyC_Backup\cstrike\sprites\gas_puff_01.spr"
 
 	; Remove remaining directories
 	RMDir "$INSTDIR\MyC_Backup\valve\logos\"
@@ -2519,39 +2519,48 @@ SectionEnd
 ; On initialization
 Function .onInit
 	SetOutPath $TEMP
-  File /oname=mycv3stmp.bmp "Images\myc_v3_splash.bmp"
+	File /oname=mycv3stmp.bmp "Images\myc_v3_splash.bmp"
 	
 	advsplash::show 1000 600 400 -1 $TEMP\mycv3stmp
 
-  Pop $0 ; $0 has '1' if the user closed the splash screen early,
-         ; '0' if everything closed normally, and '-1' if some error occurred.
-
-  Delete $TEMP\mycv3stmp.bmp
-	
+	Pop $0	; $0 has '1' if the user closed the splash screen early,
+			; '0' if everything closed normally, and '-1' if some error occurred.
+	Delete $TEMP\mycv3stmp.bmp
 	!insertmacro MUI_LANGDLL_DISPLAY
 	
 	StrCpy $1 ${Section2} ;Section2 is selected by default
 	
-;Auto-uninstall old before installing new
+	; Check if hl.exe process exists
+	SetOutPath $TEMP
+	GetTempFileName $8
+	File /oname=$8 FindProcDLL.dll
+	Push "hl.exe"
+	CallInstDLL $8 FindProc
+	
+	${If} $R0 == "1"
+		MessageBox MB_OK|MB_ICONEXCLAMATION "Please close Couner-Strike (hl.exe) process."
+		Abort
+	${Else}
+		;Auto-uninstall old before installing new
+		ReadRegStr $R0 HKLM \
+		"Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" \
+		"QuietUninstallString"   ; Silent Uninstall
+		;"UninstallString"
+		StrCmp $R0 "" done
+		 
+		MessageBox MB_OKCANCEL|MB_ICONEXCLAMATION \
+		"${APPNAME} is already installed. $\n$\nClick `OK` to remove the \
+		previous version or `Cancel` to cancel this upgrade." \
+		IDOK uninst
+		Abort
 
-  ReadRegStr $R0 HKLM \
-  "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}" \
-  "QuietUninstallString"   ; Silent Uninstall
-  ;"UninstallString"
-  StrCmp $R0 "" done
- 
-  MessageBox MB_OKCANCEL|MB_ICONEXCLAMATION \
-  "${APPNAME} is already installed. $\n$\nClick `OK` to remove the \
-  previous version or `Cancel` to cancel this upgrade." \
-  IDOK uninst
-  Abort
- 
-	;Run the uninstaller
-	uninst:
-		ClearErrors
-		ExecWait '$R0 _?=$INSTDIR' ;Do not copy the uninstaller to a temp file
-		Delete "$INSTDIR\Uninstall.exe"
-	done:
+		;Run the uninstaller
+		uninst:
+			ClearErrors
+			ExecWait '$R0 _?=$INSTDIR' ;Do not copy the uninstaller to a temp file
+			Delete "$INSTDIR\Uninstall.exe"
+		done:
+	${EndIf}
  
 FunctionEnd
 
