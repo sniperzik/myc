@@ -26,7 +26,7 @@
  !include "FileFunc.nsh"
 	
 ; Define your application name
-!define APPVERS "3.0.1.10rc15" ; VERSION 
+!define APPVERS "3.0.1.10" ; VERSION 
 !define APPNAME "MyC CS1.6"
 !define APPNAMEANDVERSION "${APPNAME} v${APPVERS}"
 !define APPYEAR "© 2011"
@@ -34,7 +34,7 @@
 !define APPAUTHOR "Sn^"
 !define APPPUBLISHER "MyC Project"
 
-VIProductVersion "3.0.1.10rc15" ; VERSION - No Spaces!!!
+VIProductVersion "3.0.1.10" ; VERSION - No Spaces!!!
 VIAddVersionKey "ProductName" "${APPNAME}"
 VIAddVersionKey "Comments" ""
 VIAddVersionKey "CompanyName" "${APPWEB} ${APPYEAR} by ${APPAUTHOR}"
