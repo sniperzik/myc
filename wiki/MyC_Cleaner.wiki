@@ -7,9 +7,12 @@ NOTE: MyC Cleaner will delete all files and later those files can't be restored.
 
 ==ScreenShots==
 
-[http://img189.imageshack.us/img189/8901/cleaner.png]
+[http://myc.googlecode.com/files/myc_cleaner.png]
 
 ==Change Log==
+—– v1.0.9 ————————
+ * Added Last Time Cleaned
+
 —– v1.0.8 ————————
  * Decreased Program Size
  * Updated Program Description
