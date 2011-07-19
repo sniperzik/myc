@@ -6,7 +6,9 @@
  * Updated Weapon Sprites
  * Updated Config
  * ??? Fixed Logo not showing on Steam
- NOTE: DO NOT Click Ok or Apply in Options or you will save your settings and default valve logo will be applied.
+ NOTE: DO NOT Click Ok or Apply in Options or
+ you will save your settings and
+ default valve logo will be applied.
 
 -- v3.0.0 -------- 
  * New NSIS Creator!
