@@ -1,4 +1,4 @@
-—– v3.0.0.9 ————————
+-- v3.0.0.9 ------
  * Added SetLaunchOptions.txt
  * Added Black Sky
  * Added Transparent Smoke Puff
@@ -8,7 +8,7 @@
  * ??? Fixed Logo not showing on Steam
  NOTE: DO NOT Click Ok or Apply in Options or you will save your settings and default valve logo will be applied.
 
-—– v3.0.0 —————————— 
+-- v3.0.0 -------- 
  * New NSIS Creator!
  * Fixed HPK Bug
  * Fixed MyC AC
@@ -25,11 +25,11 @@
  * Added MyC v3 GUI
  * Included BGSS in AutoBuy Script
 
-—– v2.6.3 ——————————
+-- v2.6.3 --------
  * Fixed Uninstaller
  * Fixed Replacer
 
-—– v2.6.2 ——————————
+-- v2.6.2 --------
  * Changed Config Name
  * Fixed C4 Located script
  * Updated Auto Buy script
