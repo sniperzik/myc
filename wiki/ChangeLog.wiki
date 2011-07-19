@@ -1,4 +1,3 @@
-#labels Featured
 —– v3.0.0.9 ————————
  * Added SetLaunchOptions.txt
  * Added Black Sky
