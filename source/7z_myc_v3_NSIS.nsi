@@ -1,29 +1,30 @@
 ; Include
-	!include "Sections.nsh"
-	!include "LogicLib.nsh"
+!include "Sections.nsh"
+!include "LogicLib.nsh"
 
-	; Backup & Restore Macros
-	!macro BackupFile FILE_DIR FILE BACKUP_TO
-	 IfFileExists "${BACKUP_TO}\*.*" +2
-	  CreateDirectory "${BACKUP_TO}"
-	 IfFileExists "${FILE_DIR}\${FILE}" 0 +2
-	  Rename "${FILE_DIR}\${FILE}" "${BACKUP_TO}\${FILE}"
-	!macroend
-	!macro RestoreFile BUP_DIR FILE RESTORE_TO
-	 IfFileExists "${BUP_DIR}\${FILE}" 0 +2
-	  Rename "${BUP_DIR}\${FILE}" "${RESTORE_TO}\${FILE}"
-	!macroend
-; Initialization
-	!define MUI_ICON "7z Installer Files\install.ico"
-	!define MUI_UNICON "7z Installer Files\uninstall.ico"
-	!define MUI_HEADERIMAGE "Images\install_header_2.bmp"
-	!define MUI_WELCOMEFINISHPAGE_BITMAP "Images\myc_install_left_3.bmp"
-	!define MUI_UNWELCOMEFINISHPAGE_BITMAP "Images\myc_install_left_3.bmp"
-	!define MUI_COMPONENTSPAGE_CHECKBITMAP "Images\simple-round2.bmp"
+; Backup & Restore Macros
+!macro BackupFile FILE_DIR FILE BACKUP_TO
+ IfFileExists "${BACKUP_TO}\*.*" +2
+  CreateDirectory "${BACKUP_TO}"
+ IfFileExists "${FILE_DIR}\${FILE}" 0 +2
+  Rename "${FILE_DIR}\${FILE}" "${BACKUP_TO}\${FILE}"
+!macroend
+!macro RestoreFile BUP_DIR FILE RESTORE_TO
+ IfFileExists "${BUP_DIR}\${FILE}" 0 +2
+  Rename "${BUP_DIR}\${FILE}" "${RESTORE_TO}\${FILE}"
+!macroend
 	
+; Initialization
+!define MUI_ICON "7z Installer Files\install.ico"
+!define MUI_UNICON "7z Installer Files\uninstall.ico"
+!define MUI_HEADERIMAGE "Images\install_header_2.bmp"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "Images\myc_install_left_3.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "Images\myc_install_left_3.bmp"
+!define MUI_COMPONENTSPAGE_CHECKBITMAP "Images\simple-round2.bmp"
+
 ; GetSize	
- !define ARP "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}"
- !include "FileFunc.nsh"
+!define ARP "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}"
+!include "FileFunc.nsh"
 	
 ; Define your application name
 !define APPVERS "3.0.1.10" ; VERSION 
@@ -76,7 +77,7 @@ ShowInstDetails show
 !insertmacro MUI_PAGE_COMPONENTS
 !insertmacro MUI_PAGE_DIRECTORY
 !insertmacro MUI_PAGE_INSTFILES
-	!define MUI_FINISHPAGE_NOAUTOCLOSE
+	;!define MUI_FINISHPAGE_NOAUTOCLOSE
     !define MUI_FINISHPAGE_RUN
     !define MUI_FINISHPAGE_RUN_NOTCHECKED
     !define MUI_FINISHPAGE_RUN_TEXT "Launch MyC Cleaner"
@@ -1161,18 +1162,18 @@ Section -FinishSection
 SectionEnd
 
 ; Modern install component descriptions
-!insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
-	!insertmacro MUI_DESCRIPTION_TEXT ${Section1} ""
-	!insertmacro MUI_DESCRIPTION_TEXT ${Section2} ""
-	!insertmacro MUI_DESCRIPTION_TEXT ${Section3} ""
-	!insertmacro MUI_DESCRIPTION_TEXT ${Section4} ""
-	!insertmacro MUI_DESCRIPTION_TEXT ${Section5} ""
-	!insertmacro MUI_DESCRIPTION_TEXT ${Section6} ""
-	!insertmacro MUI_DESCRIPTION_TEXT ${Section7} ""
-	!insertmacro MUI_DESCRIPTION_TEXT ${Section8} ""
-	!insertmacro MUI_DESCRIPTION_TEXT ${Section9} ""
-	;!insertmacro MUI_DESCRIPTION_TEXT ${Section10} ""
-!insertmacro MUI_FUNCTION_DESCRIPTION_END
+;!insertmacro MUI_FUNCTION_DESCRIPTION_BEGIN
+;	!insertmacro MUI_DESCRIPTION_TEXT ${Section1} ""
+;	!insertmacro MUI_DESCRIPTION_TEXT ${Section2} ""
+;	!insertmacro MUI_DESCRIPTION_TEXT ${Section3} ""
+;	!insertmacro MUI_DESCRIPTION_TEXT ${Section4} ""
+;	!insertmacro MUI_DESCRIPTION_TEXT ${Section5} ""
+;	!insertmacro MUI_DESCRIPTION_TEXT ${Section6} ""
+;	!insertmacro MUI_DESCRIPTION_TEXT ${Section7} ""
+;	!insertmacro MUI_DESCRIPTION_TEXT ${Section8} ""
+;	!insertmacro MUI_DESCRIPTION_TEXT ${Section9} ""
+;	!insertmacro MUI_DESCRIPTION_TEXT ${Section10} ""
+;!insertmacro MUI_FUNCTION_DESCRIPTION_END
 
 ;Uninstall section
 Section Uninstall
@@ -1636,13 +1637,6 @@ Section Uninstall
 	DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}"
 	DeleteRegKey HKLM "SOFTWARE\${APPNAME}"
 	
-	; Check if Background files exist
-	;${If} $R0 == "bla"
-	;  MessageBox MB_OK "$$R0 is 'bla'"
-	;${Else}
-	 ; MessageBox MB_OK "$$R0 is not 'bla'"
-	;${EndIf}
-		
 	##########################
 	# Restore old copy
 	##########################
@@ -2446,17 +2440,11 @@ Section Uninstall
 	;###########################
 	;	Remove MyC_Extra
 	;###########################
-	
-	; Run the MyC BB Fix
-	
-	;${If} $Dialog == error
-	;		Abort
-	;${Else}
-	;	Abort
-	;${EndIf}
-	
+
 	;ClearErrors
 	SetOutPath "$INSTDIR"
+	
+	; Run the MyC BB Fix
 	ExecWait "$INSTDIR\MyC_BB_Fix.exe"
 	Delete "$INSTDIR\MyC_BB_Fix.exe"
 	
@@ -2588,9 +2576,7 @@ Function RShortCuts
 FunctionEnd
 
 Function onGUIInit
-
-  Aero::Apply
-
+	Aero::Apply
 FunctionEnd
 
 BrandingText "   ${APPWEB} Project ${APPYEAR} by ${APPAUTHOR}"
