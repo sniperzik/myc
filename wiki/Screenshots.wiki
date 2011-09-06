@@ -2,29 +2,29 @@
 
 ==In Game==
 
-[http://myc.googlecode.com/files/proofaw.png]
+[http://myc.googlecode.com/svn/trunk/static/img/screens/proofaw.png]
 
 ==Installation==
 
   * Setup Wizard
-[http://myc.googlecode.com/files/1.jpg]
+[http://myc.googlecode.com/svn/trunk/static/img/screens/1.jpg]
 
   * License
-[http://myc.googlecode.com/files/2.jpg]
+[http://myc.googlecode.com/svn/trunk/static/img/screens/2.jpg]
 
   * Choose Components
-[http://myc.googlecode.com/files/3.jpg]
+[http://myc.googlecode.com/svn/trunk/static/img/screens/3.jpg]
 
   * Installation Directory
-[http://myc.googlecode.com/files/4.jpg]
+[http://myc.googlecode.com/svn/trunk/static/img/screens/4.jpg]
 
   * Installation Completed
-[http://myc.googlecode.com/files/5.jpg]
+[http://myc.googlecode.com/svn/trunk/static/img/screens/5.jpg]
 
 ==Uninstallation==
 
   * If you already have installed MyC CS1.6
-[http://myc.googlecode.com/files/6.jpg]
+[http://myc.googlecode.com/svn/trunk/static/img/screens/6.jpg]
 
   * Ready to uninstall
 [http://myc.googlecode.com/files/7.jpg]
