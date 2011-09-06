@@ -28,7 +28,7 @@ $element = "header";
 5)    That's it!! ***/
 
 // Set up
-$imgFolder = "/t/img/bg/"; // the path from the sites root to the image folder created at 3 above
+$imgFolder = "/img/bg/"; // the path from the sites root to the image folder created at 3 above
 $element = "main"; // the css ID of the element to apply the background image to
 
 // That's it!! Nothing below this line needs to be changed
