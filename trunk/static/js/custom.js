@@ -30,15 +30,15 @@ $(document).ready(function() {
 	/* Fancybox */
 	$("#screens").click(function() {
 		$.fancybox([
-			'http://myc.googlecode.com/files/proofaw.png',
-			'http://myc.googlecode.com/files/1.jpg',
-			'http://myc.googlecode.com/files/2.jpg',
-			'http://myc.googlecode.com/files/3.jpg',
-			'http://myc.googlecode.com/files/4.jpg',
-			'http://myc.googlecode.com/files/5.jpg',
-			'http://myc.googlecode.com/files/6.jpg',
-			'http://myc.googlecode.com/files/7.jpg',
-			'http://myc.googlecode.com/files/8.jpg'
+			'http://myc.googlecode.com/svn/trunk/static/img/screens/proofaw.png',
+			'http://myc.googlecode.com/svn/trunk/static/img/screens/1.jpg',
+			'http://myc.googlecode.com/svn/trunk/static/img/screens/2.jpg',
+			'http://myc.googlecode.com/svn/trunk/static/img/screens/3.jpg',
+			'http://myc.googlecode.com/svn/trunk/static/img/screens/4.jpg',
+			'http://myc.googlecode.com/svn/trunk/static/img/screens/5.jpg',
+			'http://myc.googlecode.com/svn/trunk/static/img/screens/6.jpg',
+			'http://myc.googlecode.com/svn/trunk/static/img/screens/7.jpg',
+			'http://myc.googlecode.com/svn/trunk/static/img/screens/8.jpg'
 		],{
 			'padding'			: 0,
 			'transitionIn'		: 'elastic',
