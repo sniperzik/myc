@@ -24,6 +24,7 @@
 ==Uninstallation==
 
   * If you already have installed MyC CS1.6
+  * After v3.0.1.10 silent uninstall enabled.
 [http://myc.googlecode.com/svn/trunk/static/img/screens/6.jpg]
 
   * Ready to uninstall
