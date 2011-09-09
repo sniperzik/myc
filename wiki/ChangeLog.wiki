@@ -12,7 +12,7 @@
  NOTE: MyC Cleaner will delete all files and
  later those files can't be restored.
 
--- v3.0.0.9 ------
+-- v3.0.0.9 --------
  * Added SetLaunchOptions.txt
  * Added Black Sky
  * Added Transparent Smoke Puff
@@ -24,8 +24,8 @@
  you will save your settings and
  default valve logo will be applied.
 
--- v3.0.0 -------- 
- * New NSIS Creator!
+-- v3.0.0 ----------
+ * New NSIS Installer!
  * Fixed HPK Bug
  * Fixed MyC AC
  * Fixed Reverse Mouse Bug
@@ -41,14 +41,29 @@
  * Added MyC v3 GUI
  * Included BGSS in AutoBuy Script
 
--- v2.6.3 --------
+-- v2.6.3 ----------
  * Fixed Uninstaller
  * Fixed Replacer
 
--- v2.6.2 --------
+-- v2.6.2 ----------
+ * First ChangeLog documentation
  * Changed Config Name
  * Fixed C4 Located script
  * Updated Auto Buy script
  * Updated MyC AC
  * Updated MyC EB
  * Added Weapon Alias list
+
+-- v2.3.2-v2.6.0 ---
+ * Added Mouse Fix
+ * Added MyC Quick Support
+ * Added New Hit Sounds
+ * Added .bat Logo & Media Cleaner
+ * Added File Replacer
+ * Removed Mouse Fix
+ * Removed MyC Quick Support
+ * Removed New Hit Sounds
+ * Rebuilded Config
+
+-- v2.3.0 ----------
+ * First Installer Version
