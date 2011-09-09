@@ -1,3 +1,17 @@
+-- v3.0.1.10 -------
+ * Added MyC Cleaner
+ * Added Desktop Shortcut
+ * Added 7-Zip Compression
+ * Added Check if hl.exe process exist
+ * Added Demo & Screenshot script
+ * Updated Installer
+ * Updated Uninstaller
+ * Updated Versions ChangeLog
+ * Fixed Black Background after uninstall
+ * Removed Transparent Smoke Puff
+ NOTE: MyC Cleaner will delete all files and
+ later those files can't be restored.
+
 -- v3.0.0.9 ------
  * Added SetLaunchOptions.txt
  * Added Black Sky
