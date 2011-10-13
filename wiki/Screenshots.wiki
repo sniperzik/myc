@@ -28,7 +28,7 @@
 [http://myc.googlecode.com/svn/trunk/static/img/screens/6.jpg]
 
   * Ready to uninstall
-[http://myc.googlecode.com/files/7.jpg]
+[http://myc.googlecode.com/svn/trunk/static/img/screens/7.jpg]
 
   * Uninstallation Completed
-[http://myc.googlecode.com/files/8.jpg]
+[http://myc.googlecode.com/svn/trunk/static/img/screens/8.jpg]
