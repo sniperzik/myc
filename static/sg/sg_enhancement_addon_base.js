@@ -82,6 +82,20 @@ unsafeWindow.gafApplyFilter = function(gafs) {
     setTimeout(unsafeWindow.gafLoadingCheck, 1000);
     return false;
   }
+  // show only contributor giveaways
+  if(unsafeWindow.gafFilterState == 5) {
+    $('.post').each(function(k,e) {
+      e = $(e);
+      if(e.find('.contributor_only').text().indexOf("Contributor") == -1) {
+        e.stop(true,true).slideUp();
+      } else {
+        e.stop(true,true).slideDown();        
+      }
+    });
+    
+    setTimeout(unsafeWindow.gafLoadingCheck, 1000);
+    return false;
+  }
   // show only the one you have points for
   if(unsafeWindow.gafFilterState == 4) {
     var p = $('#navigation li a.arrow').slice(1,2).text().match(/(\d+)P/);
@@ -580,7 +594,7 @@ unsafeWindow.gafSetPoints = function(pts) {
 }
 
 unsafeWindow.gafUpdateViews = function() {
-  var v = ['All', 'Filtered', 'Wishlist Only', 'Groups only', 'Limit by points']
+  var v = ['All', 'Filtered', 'Wishlist Only', 'Groups only', 'Limit by points', 'Contributor Only']
 
   if($('#gafViewLinks').length == 0) {
     $('.pagination:first').prepend("<div style='float: right;' id='gafViewLinks'></div>");
@@ -724,7 +738,7 @@ if(unsafeWindow.gafShowSettings) {
   $('#gafViewLinks a').live('click', function() {
       
       unsafeWindow.gafFilterState = $(this).attr('class').match(/vid(\d+)/)[1];
-      if(unsafeWindow.gafFilterState >= 5 || unsafeWindow.gafFilterState < 0) unsafeWindow.gafFilterState = 0;
+      if(unsafeWindow.gafFilterState >= 6 || unsafeWindow.gafFilterState < 0) unsafeWindow.gafFilterState = 0;
       
       unsafeWindow.gafUpdateViews();
       unsafeWindow.gafApplyFilter($('.post'));
