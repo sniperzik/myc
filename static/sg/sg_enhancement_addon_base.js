@@ -83,7 +83,7 @@ unsafeWindow.gafApplyFilter = function(gafs) {
     return false;
   }
   // show only contributor giveaways
-  if(unsafeWindow.gafFilterState == 5) {
+  if(unsafeWindow.gafFilterState == 4) {
     $('.post').each(function(k,e) {
       e = $(e);
       if(e.find('.contributor_only').text().indexOf("Contributor") == -1) {
@@ -97,7 +97,7 @@ unsafeWindow.gafApplyFilter = function(gafs) {
     return false;
   }
   // show only the one you have points for
-  if(unsafeWindow.gafFilterState == 4) {
+  if(unsafeWindow.gafFilterState == 5) {
     var p = $('#navigation li a.arrow').slice(1,2).text().match(/(\d+)P/);
     if(!p) return false;
     if(p[1] < 1) return false;
@@ -144,7 +144,7 @@ unsafeWindow.gafApplyFilter = function(gafs) {
           if(!elm.innerHTML.toLowerCase().match(pat)) continue;
           // else highlight the element and make it visible
           $(gafs[i]).find('.description').css({background: '#aaFFa8'});
-          if( !$(gafs[i]).is(':visible') && unsafeWindow.gafFilterState != 4) $(gafs[i]).stop(true,true).slideDown();
+          if( !$(gafs[i]).is(':visible') && unsafeWindow.gafFilterState != 5) $(gafs[i]).stop(true,true).slideDown();
 
           match = true;
           break;
@@ -157,7 +157,7 @@ unsafeWindow.gafApplyFilter = function(gafs) {
         }
   	}
   	
-  	if(unsafeWindow.gafFilterState != 4) {
+  	if(unsafeWindow.gafFilterState != 5) {
     	if(match == false && unsafeWindow.gafFilterState == 2) { $(gafs[i]).stop(true,true).slideUp(); }
     	else if(match == false && unsafeWindow.gafFilterState != 2) { $(gafs[i]).stop(true,true).slideDown(); }
   	}
