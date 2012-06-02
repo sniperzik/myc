@@ -594,7 +594,7 @@ unsafeWindow.gafSetPoints = function(pts) {
 }
 
 unsafeWindow.gafUpdateViews = function() {
-  var v = ['All', 'Filtered', 'Wishlist Only', 'Groups only', 'Limit by points', 'Contributor Only']
+  var v = ['All', 'Filtered', 'Wishlist Only', 'Groups only', 'Contributor Only', 'Limit by points']
 
   if($('#gafViewLinks').length == 0) {
     $('.pagination:first').prepend("<div style='float: right;' id='gafViewLinks'></div>");
