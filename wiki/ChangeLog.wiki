@@ -1,3 +1,9 @@
+—– v3.0.1.11 ————————
+ * Updated SetLaunchOptions.txt
+ * Updated Engine_MyC_Default.cfg to fix 100 fps
+ NOTE: Add -nomsaa -nofbo to SetLaunch option
+ to fix CS1.6 steam video ratio and mouse fix.
+
 -- v3.0.1.10 -------
  * Added MyC Cleaner
  * Added Desktop Shortcut
