@@ -1,3 +1,7 @@
+-- v3.0.1.12 -------
+ * Updated Installer Files
+ * Decreased Installer Size
+
 -- v3.0.1.11 -------
  * Updated SetLaunchOptions.txt
  * Updated Engine_MyC_Default.cfg to fix 100 fps
