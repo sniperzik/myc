@@ -3,7 +3,7 @@
  * Updated Black Sky sprites
  * Updated Engine_MyC_Default.cfg with new cvars
  NOTE: New Steam CS1.6 Location
- <Drive>:\Steam\steamapps\common\Half-Life\
+ < Drive >:\Steam\steamapps\common\Half-Life\
 
 -- v3.0.1.12 -------
  * Updated Installer Files
