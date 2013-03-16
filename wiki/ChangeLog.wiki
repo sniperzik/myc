@@ -1,3 +1,7 @@
+-- v3.0.1.14 -------
+ * Added CSDM Script
+ * Updated In-game menu text
+ 
 -- v3.0.1.13 -------
  * Fixed 100 fps cap after 21 feb. update
  * Updated Black Sky sprites
