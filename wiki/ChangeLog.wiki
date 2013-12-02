@@ -1,3 +1,10 @@
+-- v3.0.1.15 -------
+ * Added MyC Updater
+ * Updated Program size info
+ * Updated MyC BB Fix
+ * Updated MyC Cleaner
+ * Removed MyC AC
+
 -- v3.0.1.14 -------
  * Added CSDM Script
  * Updated In-game menu text
