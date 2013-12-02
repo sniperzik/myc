@@ -1,7 +1,7 @@
 #labels Featured
 ==About==
 
-Simple tool for CS1.6 to clean unnecessary Crash, Demo, Snapshot, Cache, Media and Logo files.
+Simple tool for CS1.6 to clean unnecessary Log, Crash, Demo, Snapshot, Cache, Media and Logo files.
 
 NOTE: MyC Cleaner will delete all files and later those files can't be restored.
 
