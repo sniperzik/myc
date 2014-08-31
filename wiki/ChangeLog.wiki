@@ -1,3 +1,9 @@
+-- v3.0.1.16 -------
+ * Added Check if Steam directory exist
+ * Fixed several bugs
+ * Updated MyC Updater
+ * Updated MyC Cleaner
+
 -- v3.0.1.15 -------
  * Added MyC Updater
  * Updated Program size info
