@@ -117,8 +117,5 @@ NOTE: DO NOT Click Ok or Apply in Options or you will save your settings
 	- File Backups
 	- Uninstaller
 	- MyC Updater
-
-	--- Author: Sn^
-	--- http://www.Myc.Lv
 	
 }}}
