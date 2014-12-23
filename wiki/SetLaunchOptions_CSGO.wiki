@@ -1,8 +1,9 @@
+{{{
 //Steam/HL2/CSGO Launch Commands
 
  Check your PC specs and add SetLaunchOptions as you need 
 
-*My SetLaunchOptions: -full -w 1360 -h 768 -32bit -nod3d9ex -novid -console -high -threads 4 -tickrate 128 -processheap -noforcemaccel -noforcemspd -noforcemparms -glmdisablemtgl 1*
+*My SetLaunchOptions: -full -w 1360 -h 768 -32bit -nod3d9ex -novid -console -high -threads 4 -tickrate 128 -processheap -noforcemaccel -noforcemspd -noforcemparms -glmdisablemtgl 1 *
 
  -threads - number of cores
 
@@ -181,3 +182,4 @@ Some useful console variables
 +sv_cheats <0/1> -- When set to 1, starts the game with cheats enabled.
 +physcannon_mega_enabled 1 - Makes Gravity gun a super gravity gun
 +cl_showfps <0/1/2/3> -- When set to 2, shows the framerate and map name.
+}}}
