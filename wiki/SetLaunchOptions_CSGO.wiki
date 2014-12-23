@@ -2,24 +2,23 @@
 
  Check your PC specs and add SetLaunchOptions as you need 
 
-My PC: Phenom II x4 3.2ghz, 8GB Ram, 1024Mb Video
-My SetLaunchOptions: -full -w 1360 -h 768 -32bit -nod3d9ex -novid -console -high -threads 4 -tickrate 128 -processheap -noforcemaccel -noforcemspd -noforcemparms -glmdisablemtgl 1
+*My SetLaunchOptions: -full -w 1360 -h 768 -32bit -nod3d9ex -novid -console -high -threads 4 -tickrate 128 -processheap -noforcemaccel -noforcemspd -noforcemparms -glmdisablemtgl 1*
 
  -threads - number of cores
 
 ---
-***Add this to fix CSGO steam crashes, mouse speed, and random freeze.
+Add this to fix CSGO steam crashes, mouse speed, and random freeze.
 ---
 -novid -console -high -threads 4 -tickrate 128 -processheap -noforcemaccel -noforcemspd -noforcemparms
 
 ---
-***Examples
+Examples
 ---
 steam.exe -applaunch 280 -dev -console -sw +sv_lan 1 +map MyMap
 hl2.exe -game cstrike -dev -console -fullscreen +sv_lan 1 +map de_dust
 
 ---
-***Command-line parameters
+Command-line parameters
 ---
 -autoconfig - Restores video and performance settings to default for the current hardware detected. Ignores settings inside any .cfg files until this parameter is removed.
 -32bit - Forces the engine to start in 32-bit mode. Only useful on 64-bit Operating Systems.
