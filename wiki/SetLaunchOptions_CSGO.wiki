@@ -1,11 +1,11 @@
 //Steam/HL2/CSGO Launch Commands
 
- * Check your PC specs and add SetLaunchOptions as you need *
+ Check your PC specs and add SetLaunchOptions as you need 
 
 My PC: Phenom II x4 3.2ghz, 8GB Ram, 1024Mb Video
 My SetLaunchOptions: -full -w 1360 -h 768 -32bit -nod3d9ex -novid -console -high -threads 4 -tickrate 128 -processheap -noforcemaccel -noforcemspd -noforcemparms -glmdisablemtgl 1
 
-* -threads - number of cores
+ -threads - number of cores
 
 ---
 ***Add this to fix CSGO steam crashes, mouse speed, and random freeze.
