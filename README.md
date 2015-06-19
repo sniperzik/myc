@@ -23,7 +23,7 @@ NOTE: DO NOT Click Ok or Apply in Options or you will save your settings
 
   * **BGSS** - Stops playing the current background (map) sound (Already Inluded in AutoBuy Script).
 
-## Readme ##
+## Readme CS1.6 ##
 ```
       --- How To Install
         
