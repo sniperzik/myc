@@ -1,4 +1,3 @@
-@@ -0,0 +1,120 @@
 ## About ##
 
   * **MyC Project** (http://MyC.Lv) is created in 2009 to share a simple and usefull config for cs 1.6 players. Project is maintained by Sn^
