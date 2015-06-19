@@ -1,0 +1,5 @@
+-- v1.0.0.1 -------
+  * Fixed MOTD
+
+-- v1.0.0.0 -------
+  * Initial Release
