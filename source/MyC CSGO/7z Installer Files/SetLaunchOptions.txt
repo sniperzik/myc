@@ -1,0 +1,184 @@
+//Steam/HL2/CSGO Launch Commands
+
+ * Check your PC specs and add SetLaunchOptions as you need *
+
+My PC: Phenom II x4 3.2ghz, 8GB Ram, 1GB Video
+My SetLaunchOptions: -dev -window -noborder -w 1360 -h 768 -64bit -nod3d9ex -novid -console -high -threads 4 -tickrate 128 -processheap -noforcemaccel -noforcemspd -noforcemparms -glmdisablemtgl 1
+
+* -threads - number of cores
+
+---
+***Add this to fix CSGO steam crashes, mouse speed, and random freeze.
+---
+-novid -console -high -threads 4 -tickrate 128 -processheap -noforcemaccel -noforcemspd -noforcemparms -glmdisablemtgl 1
+
+---
+***Examples
+---
+steam.exe -applaunch 280 -dev -console -sw +sv_lan 1 +map MyMap
+hl2.exe -game cstrike -dev -console -fullscreen +sv_lan 1 +map de_dust
+
+---
+***Command-line parameters
+---
+-autoconfig - Restores video and performance settings to default for the current hardware detected. Ignores settings inside any .cfg files until this parameter is removed.
+-32bit - Forces the engine to start in 32-bit mode. Only useful on 64-bit Operating Systems.
+-adapter -
+-allowdebug -
+-allowstalezip -
+-basedir -
+-bi -
+-bugbait - To do: Is it for Bugbait E3 2003 demo?
+-bugreporterdll -
+-buildcubemaps -
+-condebug - Logs all console output into the console.log text file.
+-console - Starts the game with the developer console enabled.
+-defaultgamedir -
+-demo -
+-dev - Enables developer mode. Also disables the automatic loading of menu background maps and stops the quit dialog from appearing on exit.
+-dti -
+-dumpvidmemstats -
+-dxlevel <level> - Forces a specific DirectX version when launching the engine. This is useful if your graphics card is DirectX 9 capable, but a lot faster using only DirectX 8 (e.g. NVidia GeForce FX 5200). Multiply the desired DirectX version to use with ten. E.g. for DirectX 8.0 you would use -dxlevel 80. For DX9 there are three possible values depending on the Shader Model the graphics card supports. See mat_dxlevel.
+-edit -
+-endgamevid -
+-exit - Exits the engine. [confirm]
+-filmgrain -
+-flushlog - Causes log files to be flushed to disk once per second (rather
+than after every 4kbytes of log data).
+-forcestartupmenu -
+-forever -
+-full_memory_dumps -
+-fullscreen or -full - Forces the engine to start in fullscreen mode.
+-g15 - Enables Logitech G15 support. G15 is only supported in SiN Episodes: Emergence. [confirm]
+-game - Sets game or mod directory to load the game from. Default is "hl2".
+-gamestatslogging -
+-gamestatsloggingtofile -
+-h <height> or -height <height>- Forces the engine to start with resolution set to <height>. Ex: -h 768
+-heapcheck -
+-heapsize <kilobytes> - Specifies the heapsize (in kilobyte) the game will use. This no longer exists on the Source 2009.
+-hideconsole -
+-high - Sets the game's priority to High
+-hijack - Take control of an existing instance of the game, if any, instead of complaining about already running.
+-hushasserts -
+-hushsteam -
+-insecure - Disable VAC.
+-internalbuild - Unknown, used in Portal 2 IHV build.
+-ip -
+-leakcheck -
+-low - Sets the game's priority to Low.
+-makedevshots - Stops Entities from Fading [confirm]
+-makereslists -
+-mat_aaquality -
+-mat_antialias -
+-mat_vsync -
+-maxplayers -
+-minmemory -
+-navanalyze -
+-navforceanalyze -
+-netspike -
+-noassert -
+-noborder - When used with the game set to windowed mode, will make the game act as if in fullscreen mode (no window border).
+-nobreakpad -
+-noclearsave -
+-nocrashdialog - Suppresses some 'memory could not be read' unhandled errors.
+-nodev -
+-nodns -
+-noforcemaccel - Use the Windows mouse acceleration settings. Only works if -useforcedmparms is set.
+-noforcemspd - Use the Windows mouse speed settings. Only works if -useforcedmparms is set.
+-nogamedll -
+-nogamestats -
+-nohltv -
+-noip -
+-NoLoadPluginsForClient -
+-nomaster -
+-nomessagebox -
+-nominidumps -
+-nomouse -
+-nop4 - Forces the Engine to bypass Perforce Integration
+-nopreload -
+-nopreloadmodels -
+-NoQueuedPacketThread -
+-norebuildaudio -
+-noshaderapi -
+-nosound -
+-NoVConfig -
+-novid - When loading a game with this parameter, the intro Valve video will not play.
+-particles -
+-phonehome - Unknown, used in Portal 2 IHV build.
+-pidfile -
+-pme -
+-port <variable> - Sets port for a listen server. Default is 27015.
+-preload -
+-primarysound -
+-publicbuild -
+-random_invariant -
+-replay - increase maxplayers by 1 at startup and automatically execute replay.cfg for the server.
+-rebuildaudio -
+-recapvid -
+-ref -
+-refresh <rate> or -refreshrate <rate> or -freq <rate>- Force a specific refresh rate. Ex: -refresh 60
+-requirecubemaps -
+-resizing -
+-reslistdir -
+-reuse -
+-rpt -
+-safe -
+-shaderapi -
+-sillygibs -
+-small -
+-sndcachedebug -
+-spewsentences -
+-startmap -
+-startstage -
+-steam - Enables Steam support (if the game is launched from Steam, this is enabled by default). Working directory must be Steam directory. Works only for singleplayer games.
+-steamlocal - Same as -steam.
+-steamport -
+-strictportbind - If you launch the game with this option it will quit with an error message if it can't bind to the default or specified port.
+-sv_benchmark -
+-swapcores -
+-tempcontent -
+-testscript <filename> - Loads a .vtest file.
+-testsub -
+-textmessagedebug -
+-textmode - Runs the game without graphics
+-threads -
+-timedemoloop -
+-toconsole - Starts the engine directly in the console, unless a map is specified with +map.
+-tools - Enables engine tools.
+-trackdeletions -
+-tvmasteronly -
+-usedevshotsfile -
+-useforcedmparms - Allows the use of -noforcemspd and -noforcemaccel.
+-uselogdir -
+-usercon -
+-usereslistfile -
+-usetcp -
+-vcrrecord -
+-vguimessages -
+-vproject -
+-w <width> or -width <width> - Forces the engine to start with resolution set to <width>. Ex: -w 1024
+-wavonly - Disables DirectSound and makes the engine attempt to play all sounds in PCM format.
+-window or -sw or -startwindowed or -windowed - Forces the engine to start in windowed mode.
+-x <x position> - In borderless windowed mode, determines where the window should be horizontally. Ex: -x 0
+-y <y position> - In borderless windowed mode, determines where the window should be vertically. Ex: -y 0
++connect - Console Command
++load - Console Command
++mat_hdr_level - Console Command
++maxplayers - Console Command
++playdemo - Console Command
++port - Console Command
++timedemo - Console Command
++timedemoquit - Console Command
+
+---
+***Console variables
+---
++<console variable> <arg> - Sets the Cvar (or console variable) to the specified setting.
+Some useful console variables
++map <map name> - Loads the map specified after the engine starts.
+ Note:	the .BSP extension is not needed.
++map_background <map name> - Forces a specified background map to be used. Useful for testing custom background maps. To avoid loading standard background maps for speed reasons, use the -dev command-line parameter.
++sv_lan <0/1> - When set to 1, launches the game in LAN mode. Useful to stop players from joining your game from the Internet.
++sv_cheats <0/1> -- When set to 1, starts the game with cheats enabled.
++physcannon_mega_enabled 1 - Makes Gravity gun a super gravity gun
++cl_showfps <0/1/2/3> -- When set to 2, shows the framerate and map name.
