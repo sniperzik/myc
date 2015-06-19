@@ -1,6 +1,6 @@
 ## About ##
 
-  * **MyC Project** (http://MyC.Lv) is created in 2009 to share a simple and usefull config for Counter-Strike 1.6 players and now for Counter-Strike: Global Offensive too. Project is maintained by Sn^
+  * **MyC Project** (http://MyC.Lv) is created in 2009 to share a simple and usefull config for [Counter-Strike 1.6](http://store.steampowered.com/app/10/) players and now for [Counter-Strike: Global Offensive](http://store.steampowered.com/app/730/) too. Project is maintained by Sn^
 
 > (More information you can check on [my steam profile page](http://steamcommunity.com/id/sndg)).
 
