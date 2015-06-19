@@ -17,13 +17,13 @@
   * **How to fix default Valve logo?** - After you installed MyC Config you should have to be custom logo.
 NOTE: DO NOT Click Ok or Apply in Options or you will save your settings
 
-  * **[MyC Cleaner?](https://code.google.com/p/myc/wiki/MyC_Cleaner)**
+  * **[MyC Cleaner?](https://github.com/sniperzik/myc/blob/wiki/MyC_Cleaner.md)**
 
   * **Black Sky sprites** - all default map sky sprites are in black color (increasing FPS).
 
   * **BGSS** - Stops playing the current background (map) sound (Already Inluded in AutoBuy Script).
 
-## Readme CS1.6 ##
+## Readme Counter-Strike 1.6 ##
 ```
       --- How To Install
         
@@ -76,7 +76,7 @@ NOTE: DO NOT Click Ok or Apply in Options or you will save your settings
         - Uninstaller
 ```
 
-## Readme\_CSGO ##
+## Readme Counter-Strike: Global Offensive ##
 ```
 
 	This installation adds to your cs better configs and specifications.
@@ -118,4 +118,3 @@ NOTE: DO NOT Click Ok or Apply in Options or you will save your settings
 	- MyC Updater
 	
 ```
-\ No newline at end of file
