@@ -1,7 +1,8 @@
 -- v1.0.0.2 -------
- * Updated Radar Cvars
- * Updated Mouse Cvars
- * 
+  * Updated Radar Cvars
+  * Updated Mouse Cvars
+  * 
+ 
 -- v1.0.0.1 -------
   * Fixed MOTD
 
