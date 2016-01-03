@@ -1,3 +1,8 @@
+## Downloads ##
+
+ * MyC CS1.6 - 
+ * MyC CSGO - 
+
 ## About ##
 
   * **MyC Project** (http://MyC.Lv) is created in 2009 to share a simple and usefull config for [Counter-Strike 1.6](http://store.steampowered.com/app/10/) players and now for [Counter-Strike: Global Offensive](http://store.steampowered.com/app/730/) too.
