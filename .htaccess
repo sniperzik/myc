@@ -1,0 +1,70 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule .* - [L]
+
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule (.+)/$ $1 [R,L]
+
+RewriteCond %{QUERY_STRING} .+
+RewriteRule (.*[^/])$ $1/ [R,NE,L]
+
+RewriteRule ^lol$ http://signup.leagueoflegends.com/?ref=4e9c022f4bd90839628252 [QSA]
+RewriteRule ^steam$ http://steamcommunity.com/tradeoffer/new/?partner=54076134&token=zQKeXViH [QSA]
+
+Options All -Indexes
+DirectoryIndex index.php index.htm index.html
+
+FileETag none
+
+# Avoid 500 error by passing charset
+AddDefaultCharset utf-8
+
+# Enable GZIP
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</ifmodule>
+
+# Expires Headers - 2678400s = 31 days
+<ifmodule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 seconds"
+  AddType image/x-icon .ico
+  ExpiresByType text/plain "access plus 30 days"
+  ExpiresByType image/x-icon "access plus 30 days"
+  ExpiresByType image/ico "access plus 30 days"
+  ExpiresByType text/html "access plus 2678400 seconds"
+  ExpiresByType image/gif "access plus 2678400 seconds"
+  ExpiresByType image/jpeg "access plus 2678400 seconds"
+  ExpiresByType image/jpg "access plus 2678400 seconds"
+  ExpiresByType image/png "access plus 2678400 seconds"
+  ExpiresByType text/css "access plus 2678400 seconds"
+  ExpiresByType text/javascript "access plus 2678400 seconds"
+  ExpiresByType application/x-javascript "access plus 2678400 seconds"
+  ExpiresByType application/javascript "access plus 2678400 seconds"
+</ifmodule>
+
+# Cache Headers
+<ifmodule mod_headers.c>
+  # Cache specified files for 31 days
+  <filesmatch "\.(ico|flv|jpg|jpeg|png|gif|css|swf)$">
+  Header set Cache-Control "max-age=2678400, public"
+  </filesmatch>
+  # Don't cache HTML
+  <filesmatch "\.(html|htm)$">
+  Header set Cache-Control "max-age=2678400, private, must-revalidate"
+  </filesmatch>
+  # Cache PDFs for a day
+  <filesmatch "\.(pdf)$">
+  Header set Cache-Control "max-age=86400, public"
+  </filesmatch>
+  # Cache Javascripts for 31 days
+  <filesmatch "\.(js)$">
+  Header set Cache-Control "max-age=2678400, private"
+  </filesmatch>
+</ifmodule>
