@@ -1,0 +1,112 @@
+model details:
+r_rootlod 0 - high
+r_rootlod 1 - medium
+r_rootlod 2 - low
+
+
+water details:
+r_waterforceexpensive 0 - single reflections
+r_waterforceexpensive 1 - reflect world
+r_waterforcereflectentities 1 - reflect all
+
+
+shadow details:
+r_shadowrendertotexture 0  - low
+r_shadowrendertotexture 1  - medium
+r_flashlightdepthtexture 1 - high
+
+
+texture details:
+mat_picmip -1 - extra high
+mat_picmip 0  - high
+mat_picmip 1  - medium
+mat_picmip 2  - low
+
+
+shader details:
+mat_reducefillrate 0 - high
+mat_reducefillrate 1 - low
+
+
+anti-aliasing:
+FSAA OFF
+mat_antialias 1/0
+mat_aaquality 0
+
+2x FSAA
+mat_antialias 2
+mat_aaquality 0
+
+4x FSAA
+mat_antialias 4
+mat_aaquality 0
+
+8x CSAA
+mat_antialias 4
+mat_aaquality 2
+
+16x CSAA
+mat_antialias 4
+mat_aaquality 4
+
+8x MSAA
+mat_antialias 8
+mat_aaquality 0
+
+16xQ CSAA
+mat_antialias 8
+mat_aaquality 2
+
+
+filtering:
+mat_forceaniso 0/2/4/8/16
+mat_trilinear 0/1
+
+
+v-sync:
+mat_vsync 0/1
+
+
+Gamma:
+mat_monitorgamma 1.6 bright - 2.6 dark
+
+
+hdr:
+mat_hdr_level 0 - off
+mat_hdr_level 1 - LDR+bloom on HDR Maps
+mat_hdr_level 2 - HDR on HDR Maps
+
+
+Checkbox: Use "bloom" effect when available:
+???
+
+
+Multicore Rendering:
+queue_mode  0 = off
+queue_mode -1 = on
+
+
+windows Aero Extensions:
+mat_disable_d3d9ex 1 - off
+mat_disable_d3d9ex 0 - on
+
+"setting.aspectratiomode" "1" // screen 0 = 4:3 / 1 = 16:9 / 2 = 16:10
+"setting.cpu_level" "0" // Effects ; 0 = LOW / 1 = MEDIUM / 2 = HIGH
+"setting.csm_quality_level" "0" // shaddowdetails 0 = LOW / 1 = MEDIUM / 2 = HIGH
+"setting.defaultres" "1440" // x-axis for your screen
+"setting.defaultresheight" "900" // y-axis for your screen
+"setting.fullscreen" "1" // fullscreen on = 1 / off = 0
+"setting.gpu_level" "0" // Shaderdetails 0 = LOW / 1 = MEDIUM / 2 = HIGH / 3 = VERY HIGH
+"setting.gpu_mem_level" "0" // Model- / Texturedetails 0 = LOW / 1 = MEDIUM / 2 = HIGH
+"setting.mat_aaquality" "0" // Anti-Aliasing Qualität 0, 1, 2, 4
+"setting.mat_antialias" "0" // Anti-Aliasing edgerendering-fact 0, 1, 2, 4, 8, 16
+"setting.mat_forceaniso" "0" // filter 0,2,4,8,16
+"setting.mat_grain_scale_override" "0" // I Dont know... sry
+"setting.mat_monitorgamma" "1.6" // gamma
+"setting.mat_motion_blur_enabled" "0" // acridness 0, 1
+"setting.mat_queue_mode" "2" // Multicore Rendering -1, 0, 1, 2
+"setting.mat_software_aa_strength" "0" // edgerendering-fact Software 0, 1, 2, 4, 8, 16
+"setting.mat_triplebuffered" "0" // 3-x Buffering AN = 1 / AUS = 0
+"setting.mat_vsync" "0" // Vertikale Syncronisation AN = 1 / AUS = 0
+"setting.mem_level" "2" // ram
+"setting.nowindowborder" "0" // windows on = 1 / off = 0
