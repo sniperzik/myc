@@ -5,7 +5,7 @@
 
 ## About ##
 
-  * **MyC Project** (http://MyC.Lv) is created in 2009 to share a simple and usefull config for [Counter-Strike 1.6](http://store.steampowered.com/app/10/) players and now for [Counter-Strike: Global Offensive](http://store.steampowered.com/app/730/) too.
+  * **MyC Project** (https://myc.Lv) is created in 2009 to share a simple and usefull config for [Counter-Strike 1.6](http://store.steampowered.com/app/10/) players and now for [Counter-Strike: Global Offensive](http://store.steampowered.com/app/730/) too.
   * Project is maintained by Sn^
 
 > (More information you can check on [my steam profile page](http://steamcommunity.com/id/sndg)).
@@ -80,6 +80,7 @@ NOTE: DO NOT Click Ok or Apply in Options or you will save your settings
         
         - File Backups
         - Uninstaller
+        - MyC Updater
 ```
 
 ## Readme Counter-Strike: Global Offensive ##
