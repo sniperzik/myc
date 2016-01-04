@@ -1,0 +1,71 @@
+﻿	
+	##########################################
+	###
+	###   PLEASE BACKUP YOUR CONFIG FILE OR
+	###   OTHER CS1.6 SPECIFICATIONS
+	###   
+	###   SAVE YOUR SCRIPTS AND MODIFICATIONS!!!
+	###
+	##########################################
+	
+	
+	This installation adds to your cs better configs and specifications.
+	
+		Simple, useful and effective configs for Counter Strike 1.6
+			(Tested on Non-Steam and Steam.)
+			
+	--- How To Install
+	
+		Install in full Counter-Strike folder as patch!
+	
+	--- Binds
+	
+		Press F1 for Deagle + he, ammo, def				
+		Press F2 for M4a1/Ak47 + ammo, vest, def	
+		Press F3 for Famas/Galil + ammo, def	
+		Press F4 for Eco&Granades + he, fl, sm, def	
+		Press F8 to Start Recording Demo and F8 to Stop Demo.
+		Press F9 or write R in Console to Reload MyC Config.
+		Press X to say_team C4 here with radio msg.		
+		Press V to Take Screenshot with Scorebar.
+		Press ALT to run silent walk script.
+		Add Your Scripts in Cstrike/MyC_cfg/Engine_User.cfg
+	
+	--- Config status
+	
+	//////////////////////////////
+	///   MyC Core
+	//////////////////////////////
+	- MyC Cleaner
+	- High FPS Configs
+	- SetLaunchOptions.txt for Steam
+	- I-Net Connection Configs
+		+ C4 Located Script
+		+ Silent Run Script
+		+ Buy Script (Included BGSS)
+		+ Bunny Hop Script
+		+ Simple Nick Change Script
+		+ Warcraft 3 Mod Configs
+		+ CSDM Script - Main weapon on spawn
+	
+	//////////////////////////////
+	///   Other Specifications	
+	//////////////////////////////
+	- MyC v3 Background
+	- Transparent Menus
+	- Black Sky
+	- Weapon sprite (Weapon blue shot)
+	- Weapon models (HLTV weapon models)
+		+ CS1.6 Non-Steam Player Models
+		+ CZ Steam Player Models
+		+ ESL Player Models
+
+	--- Included
+	
+	- File Backups
+	- Uninstaller
+	- MyC Updater
+
+	--- Author: Sn^
+	--- http://www.Myc.Lv
+	

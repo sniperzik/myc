@@ -1,0 +1,54 @@
+//Steam/HL1/CS/CZ Launch Commands
+
+ * Check your PC specs and add SetLaunchOptions as you need *
+
+My PC: Phenom II, 4GB Ram, 512Mb Video
+My SetLaunchOptions: -w 1024 -h 768 -32bpp -high -dxlevel 60 -gl -heapsize 1048576 -dev -nojoy -noipx -noforcemspd -noforcemparms -noforcemaccel
+
+---
+Add this to fix CS1.6 steam video ratio and mouse fix.
+---
+-nomsaa -nofbo
+
++map_background none -novid
+�����������������������������������������
+-noforcemaccel ; Use desktop mouse acceleration settings
+-noforcemspd ; Use desktop mouse speed settings.
+-noforcemparms ; Use desktop mouse buttons settings.
+-noaafonts ; Disables Anti-Aliasing of Screen Fonts.
+-heapsize 262144 ; 512MB System Memory
+-heapsize 524288 ; 1GB System Memory
+-heapsize 1048576 ; 2GB System Memory
+-w 640 -h 480 ; 640x480
+-w 800 -h 600 ; 800x600
+-w 1024 -h 768 ; 1024x768
+-full ; Forces the engine to start in fullscreen mode.
+-window ; Forces the engine to start in windowed mode.
+-freq 100 ; Changes the Hertz for monitors HL1 Engine. CRT 60-100 85=Common LCD 60-75 72=Common
+-refresh 100 ; Changes the Hertz for monitors HL2 Engine. CRT 60-100 85=Common LCD 60-75 72=Common
+-soft ; This enables Software hardware rendering mode.
+-d3d ; This enables Direct3D hardware rendering mode.
+-gl ; This enables Open GL hardware rendering mode.
+-nojoy ; Remove joystick support, more ram free.
+-noipx ; Disables LAN protocall.
+-noip ; Some IP related command remove if unable to connect to servers.
+-32bpp ; Enables 32Bit rendering.
+-16bpp ; Enables 16Bit rendering.
+-dxlevel 90 ; DirectX 9
+-dxlevel 81 ; DirectX 8.1
+-dxlevel 80 ; DirectX 8
+-dxlevel 70 ; DirectX 7
+-dxlevel 60 ; DirectX 6
+-port 27015 ; Changes your port # for the game.
+-console ; When launching Half-Life, this will take you straight to the console.
+-dev ; This is for developer mode.
+-zone # ; This allocates more memory to scripting files, like autoexec.cfg and so forth.
+-game [mod's name] ; Enable Half-Life to play modification games other than to go through the menu to select them.
+-safe ; It start the game in safe mode disable audio etc.
+-autoconfig ; Restores video and performance settings to default for the current hardware detected.
+-condebug ; Logs all console output into the console.log text file.
+-nocrashdialog ; Suppresses some 'memory could not be read' unhandled errors.
+-novid ; When loading a game with this parameter, the intro Valve video will not play.
+-toconsole ; Starts the engine directly in the console, unless a map is specified with +map.
++a +r_mmx 1 ; Instead of using a cfg you can launch the game with a command or a cvar in the command line.
++ex_interp 0.01 ; Sets ex_interp value 
