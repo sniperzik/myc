@@ -369,7 +369,7 @@ footer {
 	margin-top: -8px;
 	position: absolute;
 	top: 50%;
-	background: transparent url('img/steam.png') 0 0 no-repeat;
+	background: transparent url('../img/steam.png') 0 0 no-repeat;
 }
  
 .steam-group-label {
