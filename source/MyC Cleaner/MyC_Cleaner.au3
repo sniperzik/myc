@@ -2,7 +2,7 @@
 ;// Information
 ;//*****************************************************************************************
 ;// Name        : MyC Cleaner
-;// Version     : 1.1.11.0
+;// Version     : 1.1.12.0
 ;// Creator     : Sn^
 ;// E-mail      : sniperzik22@gmail.com
 ;// MyC Project : http://www.MyC.Lv/
@@ -12,38 +12,30 @@
 ;** This is a list of compiler directives used by AutoIt3Wrapper.exe.
 ;** Comment any unneeded lines as they will override any previous settings
 ;===============================================================================================================
-#Autoit3Wrapper_Testing=                        ;(Y/N) Skip Tidy, Au3Stripper and cvsWrapper for speed while testing. Default=N
-;===============================================================================================================
 ;** AutoIt3 settings
 #AutoIt3Wrapper_UseX64=N                         ;(Y/N) Use AutoIt3_x64 or Aut2Exe_x64. Default=N
 #AutoIt3Wrapper_Version=                        ;(B/P) Use Beta or Production for AutoIt3 and Aut2Eex. Default is P
 #AutoIt3Wrapper_Run_Debug_Mode=N                 ;(Y/N) Run Script with console debugging. Default=N
-#AutoIt3Wrapper_Run_Debug=                      ;(On/Off) Switch debugging on/off
 #AutoIt3Wrapper_Run_SciTE_Minimized=N            ;(Y/N) Minimize SciTE while script is running. Default=N
 #AutoIt3Wrapper_Run_SciTE_OutputPane_Minimized=N ;(Y/N) Minimize SciTE output pane at run time. Default=N
-#AutoIt3Wrapper_Autoit3Dir=                     ;Optionally override the AutoIt3 install directory to use.
-#AutoIt3Wrapper_Aut2exe=                        ;Optionally override the Aut2exe.exe to use for this script
-#AutoIt3Wrapper_AutoIt3=                        ;Optionally override the Autoit3.exe to use for this script
 ;===============================================================================================================
 ;** Aut2Exe settings
 #AutoIt3Wrapper_Icon=MyC_Cleaner.ico            ;Filename of the Ico file to use for the compiled exe
 #AutoIt3Wrapper_OutFile=MyC_Cleaner.exe         ;Target exe/a3x filename.
 #AutoIt3Wrapper_OutFile_Type=exe                ;exe=Standalone executable (Default); a3x=Tokenised AutoIt3 code file
-#AutoIt3Wrapper_OutFile_X64=                    ;Target exe filename for X64 compile.
-#AutoIt3Wrapper_Compression=2                   ;Compression parameter 0-4  0=Low 2=normal 4=High. Default=2
+AutoIt3Wrapper_Compression=2                   ;Compression parameter 0-4  0=Low 2=normal 4=High. Default=2
 #AutoIt3Wrapper_UseUpx=Y                        ;(Y/N) Compress output program.  Default=Y
 #AutoIt3Wrapper_UPX_Parameters=                 ;Override the default settings for UPX.
 #AutoIt3Wrapper_Change2CUI=N                     ;(Y/N) Change output program to CUI in stead of GUI. Default=N
-#AutoIt3Wrapper_Compile_both=                   ;(Y/N) Compile both X86 and X64 in one run. Default=N
 ;===============================================================================================================
 ;** Target program Resource info
 #AutoIt3Wrapper_Res_Comment=Author: Sn^         ;Comment field
 #AutoIt3Wrapper_Res_Description=MyC Cleaner     ;Description field
-#AutoIt3Wrapper_Res_Fileversion=1.1.11.0        ;File Version
+#AutoIt3Wrapper_Res_Fileversion=1.1.12.0        ;File Version
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=N  ;(Y/N/P) AutoIncrement FileVersion after compile. Default=N
 ;                                                 P=Prompt, Will ask whether to increase the versionnumber
 #AutoIt3Wrapper_Res_Language=                   ;Resource Language code . Default 2057=English (United Kingdom)
-#AutoIt3Wrapper_Res_LegalCopyright=MyC.Lv © 2014 by Sn^             ;Copyright field
+#AutoIt3Wrapper_Res_LegalCopyright=MyC.Lv © 2016 by Sn^             ;Copyright field
 #AutoIt3Wrapper_res_requestedExecutionLevel=None    ;asInvoker, highestAvailable, requireAdministrator or None (remove the trsutInfo section).  Default is the setting from Aut2Exe (asInvoker)
 #AutoIt3Wrapper_res_Compatibility=              ;Vista,Windows7 Both allowed separated by a comma     (Default=None)
 #AutoIt3Wrapper_Res_SaveSource=N                 ;(Y/N) Save a copy of the Script_source in the EXE resources. Default=N
@@ -70,7 +62,6 @@
 ; If no ResNumber is specified, the added icons are numbered from 201 up
 #AutoIt3Wrapper_Res_File_Add=                   ; Filename[,Section [,ResName[,LanguageCode]]] to be added.
 ; Add files to the resources - can be compressed
-#AutoIt3Wrapper_Res_Remove=                     ; ResType, ResName [, LanguageCode]
 ; Remove resources
 ;===============================================================================================================
 ; Tidy Settings
@@ -78,20 +69,10 @@
 #AutoIt3Wrapper_Tidy_Stop_OnError=Y              ;(Y/N) Continue when only Warnings. Default=Y
 #Tidy_Parameters=                               ;Tidy Parameters...see SciTE4AutoIt3 Helpfile for options
 ;===============================================================================================================
-; Au3Stripper Settings
-#AutoIt3Wrapper_Run_Au3Stripper=N                 ;(Y/N) Run Au3Stripper before compilation. default=N
-#Au3Stripper_Parameters=                         ; Au3Stripper parameters...see SciTE4AutoIt3 Helpfile for options
-;===============================================================================================================
 ; AU3Check settings
 #AutoIt3Wrapper_Run_AU3Check=Y                   ;(Y/N) Run au3check before compilation. Default=Y
 #AutoIt3Wrapper_AU3Check_Parameters=            ;Au3Check parameters...see SciTE4AutoIt3 Helpfile for options
 #AutoIt3Wrapper_AU3Check_Stop_OnWarning=        ;(Y/N) Continue/Stop on Warnings.(Default=N)
-;===============================================================================================================
-; Versioning settings
-#AutoIt3Wrapper_Versioning=                    ;(Y/N/V) Run Versioning to update the script source. default=N
-;                                                 V=only run when fileversion is increased by #AutoIt3Wrapper_Res_FileVersion_AutoIncrement.
-#AutoIt3Wrapper_Versioning_Parameters=          ; /NoPrompt  : Will skip the Comments prompt
-;                                                 /Comments  : Text to added in the Comments. It can also contain the below variables.
 ;===============================================================================================================
 ; RUN BEFORE AND AFTER definitions
 #AutoIt3Wrapper_Run_Before=                     ;process to run before compilation - multiple records will be processed in sequence
@@ -123,10 +104,10 @@
 $name="MyC Cleaner"
 $name_="MyC_Cleaner"
 $v="v"
-$vers="1.1.11"
+$vers="1.1.12"
 $web="MyC.Lv"
 $author="Sn^"
-$year="2014"
+$year="2016"
 $copy="           "&$web&" © "&$year&" by "&$author
 ; MyC CS1.6 Folder
 $mycFolder = @ScriptDir
