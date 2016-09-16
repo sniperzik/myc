@@ -5,7 +5,7 @@
 ;// Version     : 1.0.0.0
 ;// Creator     : Sn^
 ;// E-mail      : sniperzik22@gmail.com
-;// MyC Project : http://www.MyC.Lv/
+;// MyC Project : https://MyC.Lv/
 ;//*****************************************************************************************
 ;#NoTrayIcon ;Disable tray icon
 #Region AutoIt3Wrapper directives section
@@ -31,12 +31,12 @@
 ;** Target program Resource info
 #AutoIt3Wrapper_Res_Comment=Author: Sn^		;##	;Comment field
 #AutoIt3Wrapper_Res_Description=MyC Updater	;##	;Description field
-#AutoIt3Wrapper_Res_Fileversion=1.0.0.2
+#AutoIt3Wrapper_Res_Fileversion=1.0.0.4
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=N	;(Y/N/P)AutoIncrement FileVersion After Aut2EXE is finished. default=N
 ;                                                 P=Prompt, Will ask at Compilation time if you want to increase the versionnumber
 #AutoIt3Wrapper_Res_ProductVersion=				;Product Version. Default is the AutoIt3 version used.
 #AutoIt3Wrapper_Res_Language=					;Resource Language code . default 2057=English (United Kingdom)
-#AutoIt3Wrapper_Res_LegalCopyright=MyC.Lv © 2014 by Sn^;##		;Copyright field
+#AutoIt3Wrapper_Res_LegalCopyright=MyC.Lv © 2016 by Sn^;##		;Copyright field
 #AutoIt3Wrapper_res_requestedExecutionLevel=None;None, asInvoker, highestAvailable or requireAdministrator   (default=None)
 #AutoIt3Wrapper_Res_SaveSource=n				;(Y/N) Save a copy of the Scriptsource in the EXE resources. default=N
 ; If _Res_SaveSource=Y the content of Scriptsource depends on the _Run_Obfuscator and #obfuscator_parameters directives:
@@ -121,10 +121,10 @@ $fo1="cstrike\"
 $cs16="CS16"
 $fo6="csgo\"
 $v="v"
-$vers="1.0.0.3"
+$vers="1.0.0.4"
 $web="MyC.Lv"
 $author="Sn^"
-$year="2014"
+$year="2016"
 $copy="           "&$web&" © "&$year&" by "&$author
 ; Delay
 $closeDelay = "5000" ; miliseconds = 5 sec.
@@ -167,7 +167,7 @@ $iMsgBoxAnswer = MsgBox(36,"MyC Updater","Ready to check for updates." & @LF & @
 Select
    Case $iMsgBoxAnswer = 6 ;Yes
 	
-		$VersionsInfo = "http://myc.lv/update/"&$name_&"_version.ini"
+		$VersionsInfo = "https://myc.lv/update/"&$name_&"_version.ini"
 		$oldVersion = IniRead($name_&".ini",$game&"Version",$game&"Version","NotFound")
 		$newVersion = "0.0.0.0"
 
