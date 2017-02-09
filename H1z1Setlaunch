@@ -1,0 +1,1 @@
+-novid -nosplash -noPause -cpuCount=4 -maxMem=16384 -malloc=system
