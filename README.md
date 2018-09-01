@@ -20,7 +20,7 @@
 
 ## FAQ ##
 
-  * **Where can i find my default CSGO config.cfg?** - The new config.cfg and video.txt (Video setting file) location are changed, now they can be found by locating "C:\Steam\userdata\<-YOUR-STEAM-USERID->\730\local\cfg".
+  * **Where can i find my default CSGO config.cfg?** - The new config.cfg and video.txt (Video setting file) location are changed, now they can be found by locating "C:\Steam\userdata\\<-YOUR-STEAM-USERID->\730\local\cfg".
 
   * **How to fix "You do not have Administrator access"?** - You need adminitration access to install MyC Config, so just Right Mouse Click on file and Choose "Run as administrator".
 
