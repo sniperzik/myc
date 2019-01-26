@@ -26,7 +26,12 @@
     if ((host == window.location.host) && (window.location.protocol != "https:"))
     window.location.protocol = "https";
     </script>
-    
+    <script>
+    var metas=document.getElementsByTagName('meta');var i;if(navigator.userAgent.match(/iPhone/i)){for(i=0;i<metas.length;i++){if(metas[i].name=="viewport"){metas[i].content="width=device-width, minimum-scale=1.0, maximum-scale=1.0";}}
+document.addEventListener("gesturestart",gestureStart,false);}
+function gestureStart(){for(i=0;i<metas.length;i++){if(metas[i].name=="viewport"){metas[i].content="width=device-width, minimum-scale=0.25, maximum-scale=1.6";}}}
+    </script>
+	    
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -80,7 +85,7 @@
       </footer>
     </div>
     <script>var d = new Date();var n = d.getFullYear();document.getElementById("year").innerHTML = n;</script>
-    <script src="js/scale.fix.js"></script>
+   <!-- <script src="js/scale.fix.js"></script> !-->
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
