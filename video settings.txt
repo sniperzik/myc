@@ -90,23 +90,26 @@ windows Aero Extensions:
 mat_disable_d3d9ex 1 - off
 mat_disable_d3d9ex 0 - on
 
-"setting.aspectratiomode" "1" // screen 0 = 4:3 / 1 = 16:9 / 2 = 16:10
-"setting.cpu_level" "0" // Effects ; 0 = LOW / 1 = MEDIUM / 2 = HIGH
-"setting.csm_quality_level" "0" // shaddowdetails 0 = LOW / 1 = MEDIUM / 2 = HIGH
-"setting.defaultres" "1440" // x-axis for your screen
-"setting.defaultresheight" "900" // y-axis for your screen
-"setting.fullscreen" "1" // fullscreen on = 1 / off = 0
-"setting.gpu_level" "0" // Shaderdetails 0 = LOW / 1 = MEDIUM / 2 = HIGH / 3 = VERY HIGH
-"setting.gpu_mem_level" "0" // Model- / Texturedetails 0 = LOW / 1 = MEDIUM / 2 = HIGH
-"setting.mat_aaquality" "0" // Anti-Aliasing Qualität 0, 1, 2, 4
-"setting.mat_antialias" "0" // Anti-Aliasing edgerendering-fact 0, 1, 2, 4, 8, 16
-"setting.mat_forceaniso" "0" // filter 0,2,4,8,16
-"setting.mat_grain_scale_override" "0" // I Dont know... sry
-"setting.mat_monitorgamma" "1.6" // gamma
-"setting.mat_motion_blur_enabled" "0" // acridness 0, 1
-"setting.mat_queue_mode" "2" // Multicore Rendering -1, 0, 1, 2
-"setting.mat_software_aa_strength" "0" // edgerendering-fact Software 0, 1, 2, 4, 8, 16
-"setting.mat_triplebuffered" "0" // 3-x Buffering AN = 1 / AUS = 0
-"setting.mat_vsync" "0" // Vertikale Syncronisation AN = 1 / AUS = 0
-"setting.mem_level" "2" // ram
-"setting.nowindowborder" "0" // windows on = 1 / off = 0
+"VideoConfig"
+{
+	"setauto.cpu_level" "1" // effect Detail: /0 = LOW /1 = MEDIUM /2 = HIGH
+	"setauto.gpu_level" "0" // shader Detail: /0 = LOW /1 = MEDIUM /2 = HIGH /3 = VERY HIGH
+	"setauto.mat_antialias" "0" // multisampling Anti-Aliasing Mode: /0 = NONE /2 = 2X MSAA /4 = 4X MSAA /8 = 8X MSAA
+	"setauto.mat_aaquality" "0" // anti-Aliasing Quality: /0 = NONE
+	"setauto.mat_forceaniso" "0" // anisotropic Filter: /0 = bilinear /1 = trilinear /2 = 2X /4 = 4X /8 = 8X /16 = 16X
+	"setting.mat_vsync" "0" // Vertical Syncronisation: /0 = DISABLED /1 = ENABLED
+	"setting.mat_triplebuffered" "0" // Triple Buffering: /0 = DISABLED /1 = ENABLED
+	"setting.mat_grain_scale_override" "1" // Removes the grain effect on the screen.
+	"setauto.gpu_mem_level" "2" // Model/Texture details: /0 = LOW /1 = MEDIUM /2 = HIGH
+	"setting.mem_level" "-1" // Paged Pool Memory Available: /-1 = SYSTEM DEFAULT /0 = LOW /1 = MEDIUM /2 = HIGH
+	"setting.mat_queue_mode" "-1" // Multicore Rendering: /-1 = SYSTEM DEFAULT /0 = synchronous single thread /1 = queued single thread /2 = Multithreading
+	"setauto.csm_quality_level" "0" // Global Shadow Quality: /0 = VERY LOW /1 = LOW /2 = MEDIUM /3 = HIGH
+	"setting.mat_software_aa_strength" "0" // FXAA smoothing edges factor /0 = DISABLED, 1, 2, 4, 8, 16
+	"setting.mat_motion_blur_enabled" "0" // Motion sharpness: /0 = DISABLED /1 = ENABLED
+	"setting.fullscreen" "1" // Full screen: /0 = Windowed /1 = ENABLED
+	"setting.defaultres" "1680" // Resolution screen x-Ax
+	"setting.defaultresheight" "1050" // Resolution screen y-Ax
+	"setting.aspectratiomode" "2" // Screen Ratio: /0 = 4:3 /1 = 16:9 /2 = 16:10
+	"setting.nowindowborder" "0" // No border limitation in windowed mode: /0 = DISABLED /1 = ENABLED
+	"setting.mat_monitorgamma" "1.7" // Screen Brightness
+}
