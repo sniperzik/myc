@@ -16,7 +16,7 @@
 	"setting.mat_motion_blur_enabled" "0"
 	"setting.fullscreen" "1"
 	"setting.defaultres" "1280"
-	"setting.defaultresheight" "720"
-	"setting.aspectratiomode" "1"
+	"setting.defaultresheight" "960"
+	"setting.aspectratiomode" "0"
 	"setting.nowindowborder" "0"
 }
