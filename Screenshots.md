@@ -2,34 +2,33 @@
 |:-----------------------------------------------------------------|:---------------------------------------------------------------------------|:-------------------------------------------------------------------------------|
 
 ## In Game ##
-
-![http://myc.googlecode.com/svn/trunk/static/img/screens/proofaw.png](http://myc.googlecode.com/svn/trunk/static/img/screens/proofaw.png)
+![Proof](https://raw.githubusercontent.com/sniperzik/myc/master/img/proofaw.png)
 
 ## Installation ##
 
   * Setup Wizard
-![http://myc.googlecode.com/svn/trunk/static/img/screens/1.jpg](http://myc.googlecode.com/svn/trunk/static/img/screens/1.jpg)
+![1](https://raw.githubusercontent.com/sniperzik/myc/master/img/1.jpg)
 
   * License
-![http://myc.googlecode.com/svn/trunk/static/img/screens/2.jpg](http://myc.googlecode.com/svn/trunk/static/img/screens/2.jpg)
+![2](https://raw.githubusercontent.com/sniperzik/myc/master/img/2.jpg)
 
   * Choose Components
-![http://myc.googlecode.com/svn/trunk/static/img/screens/3.jpg](http://myc.googlecode.com/svn/trunk/static/img/screens/3.jpg)
+![3](https://raw.githubusercontent.com/sniperzik/myc/master/img/3.jpg)
 
   * Installation Directory
-![http://myc.googlecode.com/svn/trunk/static/img/screens/4.jpg](http://myc.googlecode.com/svn/trunk/static/img/screens/4.jpg)
+![4](https://raw.githubusercontent.com/sniperzik/myc/master/img/4.jpg)
 
   * Installation Completed
-![http://myc.googlecode.com/svn/trunk/static/img/screens/5.jpg](http://myc.googlecode.com/svn/trunk/static/img/screens/5.jpg)
+![5](https://raw.githubusercontent.com/sniperzik/myc/master/img/5.jpg)
 
 ## Uninstallation ##
 
   * If you already have installed MyC CS1.6
   * After v3.0.1.10 silent uninstall enabled.
-![http://myc.googlecode.com/svn/trunk/static/img/screens/6.jpg](http://myc.googlecode.com/svn/trunk/static/img/screens/6.jpg)
+![6](https://raw.githubusercontent.com/sniperzik/myc/master/img/6.jpg)
 
   * Ready to uninstall
-![http://myc.googlecode.com/svn/trunk/static/img/screens/7.jpg](http://myc.googlecode.com/svn/trunk/static/img/screens/7.jpg)
+![7](https://raw.githubusercontent.com/sniperzik/myc/master/img/7.jpg)
 
   * Uninstallation Completed
-![http://myc.googlecode.com/svn/trunk/static/img/screens/8.jpg](http://myc.googlecode.com/svn/trunk/static/img/screens/8.jpg)
+![8](https://raw.githubusercontent.com/sniperzik/myc/master/img/8.jpg)
