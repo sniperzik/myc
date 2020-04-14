@@ -1,4 +1,4 @@
-﻿;Enable Unicode encoding
+﻿;Enable Unicode encoding #CSGO
 Unicode True
 
 ; Include
@@ -29,10 +29,10 @@ Unicode True
 
 ; GetSize	Add remove program entry
 !define ARP "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}"
-
+!include "FileFunc.nsh"
 
 ; Define your application name
-!define APPVERS "1.0.0.5" ; VERSION 
+!define APPVERS "1.0.0.6" ; VERSION 
 !define APPNAME "MyC CSGO"
 !define APPNAMEANDVERSION "${APPNAME} v${APPVERS}"
 !define APPYEAR "© 2020"
@@ -42,7 +42,7 @@ Unicode True
 !define APPSIZE "1550" ; 1,55 MB (1 634 304 bytes) MB : Bytes (45.1 x 1024 Bytes = 46182.4) ~ 2 415 333 Bytes
 !define APPGAME "CSGO" ; To Use for all files. ${APPGAME}
 
-VIProductVersion "1.0.0.5" ; Ex. 1.0.0.0 VERSION - No Spaces!!!
+VIProductVersion "1.0.0.6" ; Ex. 1.0.0.0 VERSION - No Spaces!!!
 VIAddVersionKey "ProductName" "${APPNAME}"
 VIAddVersionKey "Comments" ""
 VIAddVersionKey "CompanyName" "${APPWEB} ${APPYEAR} by ${APPAUTHOR}"
@@ -69,7 +69,6 @@ RequestExecutionLevel Admin ;User
 
 ; Modern interface settings
 !include "MUI2.nsh"
-!include "FileFunc.nsh"
 
 ; Show Install Details
 ShowInstDetails show
@@ -82,7 +81,7 @@ ShowInstDetails show
 !define MUI_COMPONENTSPAGE_NODESC
 !define MUI_CUSTOMFUNCTION_GUIINIT onGUIInit ; Aero
 
-;!insertmacro MUI_PAGE_WELCOME
+;!insertmacro MUI_PAGE_WELCOME ;## NSIS 3.0+ Broken Macros
 !insertmacro MUI_PAGE_LICENSE "7z Installer Files\MyC_${APPGAME}_License.txt"
 ;!insertmacro MUI_PAGE_README "Installer Files\MyC_${APPGAME}_Readme.txt"
 ;!insertmacro MUI_PAGE_CHANGELOG "Installer Files\MyC_${APPGAME}_ChangeLog.log"
@@ -98,7 +97,7 @@ ShowInstDetails show
 	!define MUI_FINISHPAGE_SHOWREADME_NOTCHECKED
 	!define MUI_FINISHPAGE_SHOWREADME_TEXT "Show Readme"
 	!define MUI_FINISHPAGE_SHOWREADME_FUNCTION "RShortCuts"
-;!insertmacro MUI_PAGE_FINISH
+;!insertmacro MUI_PAGE_FINISH ;## NSIS 3.0+ Broken Macros
 
 !insertmacro MUI_UNPAGE_CONFIRM
 !insertmacro MUI_UNPAGE_INSTFILES
@@ -587,15 +586,13 @@ Function .onInit
 		StrCpy $INSTDIR "$1"
 	${EndIf}
 
-	; Check if hl.exe process exists
-	SetOutPath $TEMP
-	GetTempFileName $8
-	File /oname=$8 FindProcDLL.dll
-	Push "csgo.exe"
-	CallInstDLL $8 FindProc
+	; Check if csgo.exe process exists
+	StrCpy $8 "csgo.exe"
+    nsProcess::_FindProcess $8
+	Pop $R0
 
-	${If} $R0 == "1"
-		MessageBox MB_OK|MB_ICONEXCLAMATION "Please close Counter-Strike Global Offensive (csgo.exe) process."
+	${If} $R0 == "0"	; Process found 
+		MessageBox MB_OK|MB_ICONEXCLAMATION "Please close Counter-Strike Global Offensive ($8) process."
 		Abort
 	${Else}
 		;Auto-uninstall old before installing new

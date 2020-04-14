@@ -1,6 +1,9 @@
 
  - Check Latest Version @ http://www.Myc.Lv -
  
+-- v1.0.0.6 ------- 
+ * Fixed Check if csgo.exe process exist
+
 -- v1.0.0.5 ------- 
  * Added Volume alias
  * Updated In-game Music values

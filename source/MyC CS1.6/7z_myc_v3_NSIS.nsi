@@ -1,3 +1,6 @@
+;Enable Unicode encoding #CS1.6
+Unicode True
+
 ; Include
 !include "Sections.nsh"
 !include "LogicLib.nsh"
@@ -29,16 +32,17 @@
 !include "FileFunc.nsh"
 
 ; Define your application name
-!define APPVERS "3.0.1.16" ; VERSION 
+!define APPVERS "3.0.1.17" ; VERSION 
 !define APPNAME "MyC CS1.6"
 !define APPNAMEANDVERSION "${APPNAME} v${APPVERS}"
-!define APPYEAR "© 2014"
+!define APPYEAR "© 2020"
 !define APPWEB "MyC.Lv"
 !define APPAUTHOR "Sn^"
 !define APPPUBLISHER "MyC Project"
 !define APPSIZE "46183" ; MB : Bytes (45.1 x 1024 Bytes = 46182.4) ~ 46183 Bytes
+!define APPGAME "CS1.6" ; To Use for all files. ${APPGAME}
 
-VIProductVersion "3.0.1.16" ; VERSION - No Spaces!!!
+VIProductVersion "3.0.1.17" ; VERSION - No Spaces!!!
 VIAddVersionKey "ProductName" "${APPNAME}"
 VIAddVersionKey "Comments" ""
 VIAddVersionKey "CompanyName" "${APPWEB} ${APPYEAR} by ${APPAUTHOR}"
@@ -47,16 +51,19 @@ VIAddVersionKey "LegalCopyright" "${APPWEB} ${APPYEAR} by ${APPAUTHOR}"
 VIAddVersionKey "FileDescription" "${APPNAME} v${APPVERS}"
 VIAddVersionKey "FileVersion" "${APPVERS}"
 
+CRCCheck on
+SetCompressor /SOLID lzma
+
 ; Main Install settings
 Name "${APPNAMEANDVERSION}"
 InstallDir "$PROGRAMFILES"
 InstallDirRegKey HKLM "Software\${APPNAME}" ""
-OutFile "MyC_CS1.6_Backups\MyC_CS1.6_v${APPVERS}.exe"
+OutFile "MyC_CS1.6_Backups\MyC_${APPGAME}_v${APPVERS}.exe"
 Icon "7z Installer Files\install.ico"
 UninstallIcon "7z Installer Files\uninstall.ico"
 
 ; Request application privileges for Windows Vista
-RequestExecutionLevel user
+RequestExecutionLevel Admin ;User
 
 !addplugindir "."
 
@@ -74,23 +81,23 @@ ShowInstDetails show
 !define MUI_COMPONENTSPAGE_NODESC
 !define MUI_CUSTOMFUNCTION_GUIINIT onGUIInit ; Aero
 
-!insertmacro MUI_PAGE_WELCOME
-!insertmacro MUI_PAGE_LICENSE "7z Installer Files\MyC_CS1.6_License.txt"
-;!insertmacro MUI_PAGE_README "Installer Files\MyC_CS1.6_Readme.txt"
-;!insertmacro MUI_PAGE_CHANGELOG "Installer Files\MyC_CS1.6_ChangeLog.log"
+;!insertmacro MUI_PAGE_WELCOME ;## NSIS 3.0+ Broken Macros
+!insertmacro MUI_PAGE_LICENSE "7z Installer Files\MyC_${APPGAME}_License.txt"
+;!insertmacro MUI_PAGE_README "Installer Files\MyC_${APPGAME}_Readme.txt"
+;!insertmacro MUI_PAGE_CHANGELOG "Installer Files\MyC_${APPGAME}_ChangeLog.log"
 !insertmacro MUI_PAGE_COMPONENTS
 !insertmacro MUI_PAGE_DIRECTORY
 !insertmacro MUI_PAGE_INSTFILES
 	;!define MUI_FINISHPAGE_NOAUTOCLOSE
     !define MUI_FINISHPAGE_RUN
     !define MUI_FINISHPAGE_RUN_NOTCHECKED
-    !define MUI_FINISHPAGE_RUN_TEXT "Launch MyC CS1.6 Cleaner"
+    !define MUI_FINISHPAGE_RUN_TEXT "Launch MyC ${APPGAME} Cleaner"
     !define MUI_FINISHPAGE_RUN_FUNCTION "LaunchLink"
 	!define MUI_FINISHPAGE_SHOWREADME ""
 	!define MUI_FINISHPAGE_SHOWREADME_NOTCHECKED
 	!define MUI_FINISHPAGE_SHOWREADME_TEXT "Show Readme"
 	!define MUI_FINISHPAGE_SHOWREADME_FUNCTION "RShortCuts"
-!insertmacro MUI_PAGE_FINISH
+;!insertmacro MUI_PAGE_FINISH ;## NSIS 3.0+ Broken Macros
 
 !insertmacro MUI_UNPAGE_CONFIRM
 !insertmacro MUI_UNPAGE_INSTFILES
@@ -472,9 +479,9 @@ Section "MyC Config Core" Section1
 	; Clean up MyC Config Core
 	Delete "$INSTDIR\cstrike-16.ico"
 	Delete "$INSTDIR\cstrike.ico"
-	Delete "$INSTDIR\MyC_CS1.6_License.txt"
-	Delete "$INSTDIR\MyC_CS1.6_ChangeLog.log"
-	Delete "$INSTDIR\MyC_CS1.6_Readme.txt"
+	Delete "$INSTDIR\MyC_${APPGAME}_License.txt"
+	Delete "$INSTDIR\MyC_${APPGAME}_ChangeLog.log"
+	Delete "$INSTDIR\MyC_${APPGAME}_Readme.txt"
 	Delete "$INSTDIR\SetLaunchOptions.txt"
 	Delete "$INSTDIR\valve.ico"
 	Delete "$INSTDIR\install.ico"
@@ -1132,11 +1139,11 @@ Section -FinishSection
 
 	; Create ShortCuts
 	SetOutPath $INSTDIR
-	CreateShortCut "$DESKTOP\MyC CS1.6 Cleaner.lnk" "$INSTDIR\MyC_Cleaner.exe" \
+	CreateShortCut "$DESKTOP\MyC ${APPGAME} Cleaner.lnk" "$INSTDIR\MyC_Cleaner.exe" \
 	"" "$INSTDIR\MyC_Cleaner.exe" 0 
-	CreateShortCut "$DESKTOP\MyC CS1.6 Updater.lnk" "$INSTDIR\MyC_Updater.exe" \
+	CreateShortCut "$DESKTOP\MyC ${APPGAME} Updater.lnk" "$INSTDIR\MyC_Updater.exe" \
 	"" "$INSTDIR\MyC_Updater.exe" 0 
-	; CreateShortCut "$DESKTOP\Readme.lnk" "$INSTDIR\MyC_CS1.6_Readme.txt"
+	; CreateShortCut "$DESKTOP\Readme.lnk" "$INSTDIR\MyC_${APPGAME}_Readme.txt"
 	;SetOutPath $INSTDIR
 	;CreateShortCut "$SMPROGRAMS\${APPNAME}\MyC Cleaner.lnk" "$INSTDIR\MyC_Cleaner.exe"
 	;"" "$INSTDIR\MyC_Cleaner.exe" 0 
@@ -1196,9 +1203,9 @@ Section Uninstall
 	; Clean up MyC Config Core
 	Delete "$INSTDIR\cstrike-16.ico"
 	Delete "$INSTDIR\cstrike.ico"
-	Delete "$INSTDIR\MyC_CS1.6_License.txt"
-	Delete "$INSTDIR\MyC_CS1.6_ChangeLog.log"
-	Delete "$INSTDIR\MyC_CS1.6_Readme.txt"
+	Delete "$INSTDIR\MyC_${APPGAME}_License.txt"
+	Delete "$INSTDIR\MyC_${APPGAME}_ChangeLog.log"
+	Delete "$INSTDIR\MyC_${APPGAME}_Readme.txt"
 	Delete "$INSTDIR\SetLaunchOptions.txt"
 	Delete "$INSTDIR\valve.ico"
 	Delete "$INSTDIR\install.ico"
@@ -1643,8 +1650,8 @@ Section Uninstall
 	;RMDir "$INSTDIR\"
 
 	; Remove ShortCuts
-	Delete "$DESKTOP\MyC CS1.6 Cleaner.lnk"
-	Delete "$DESKTOP\MyC CS1.6 Updater.lnk"
+	Delete "$DESKTOP\MyC ${APPGAME} Cleaner.lnk"
+	Delete "$DESKTOP\MyC ${APPGAME} Updater.lnk"
 	; Delete "$DESKTOP\Readme.lnk"
 	; Delete "$SMPROGRAMS\${APPNAME}\MyC Cleaner.lnk"
 	; Delete "$SMPROGRAMS\${APPNAME}\Uninstall.lnk"
@@ -2482,14 +2489,12 @@ Function .onInit
 	${EndIf}
 
 	; Check if hl.exe process exists
-	SetOutPath $TEMP
-	GetTempFileName $8
-	File /oname=$8 FindProcDLL.dll
-	Push "hl.exe"
-	CallInstDLL $8 FindProc
+	StrCpy $8 "hl.exe"
+    nsProcess::_FindProcess $8
+	Pop $R0
 
-	${If} $R0 == "1"
-		MessageBox MB_OK|MB_ICONEXCLAMATION "Please close Couner-Strike (hl.exe) process."
+	${If} $R0 == "0"	; Process found 
+		MessageBox MB_OK|MB_ICONEXCLAMATION "Please close Couner-Strike ($8) process."
 		Abort
 	${Else}
 		;Auto-uninstall old before installing new
@@ -2535,7 +2540,7 @@ FunctionEnd
 
 Function RShortCuts
 	SetOutPath $INSTDIR
-	ExecShell "" "$INSTDIR\MyC_CS1.6_Readme.txt"
+	ExecShell "" "$INSTDIR\MyC_${APPGAME}_Readme.txt"
 FunctionEnd
 
 Function onGUIInit
