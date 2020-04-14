@@ -1,3 +1,10 @@
+-- v3.0.1.17 -------
+ * Added Volume alias
+ * Added Microphone alias
+ * Updated Engine_MyC_Default.cfg Cvars
+ * Fixed Check if hl.exe process exist
+ * Removed Demo & Screenshot script
+
 -- v3.0.1.16 -------
   * Added Check if Steam directory exist
   * Fixed several bugs
