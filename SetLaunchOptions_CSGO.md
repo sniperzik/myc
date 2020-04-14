@@ -4,7 +4,7 @@
 
  Check your PC specs and add SetLaunchOptions as you need 
 
-*My SetLaunchOptions: -full -w 1360 -h 768 -32bit -nod3d9ex -novid -console -high -threads 4 -tickrate 128 -processheap -noforcemaccel -noforcemspd -noforcemparms -glmdisablemtgl 1 *
+*-freq 144 -novid -console -high -threads 8 -tickrate 128 -processheap -noforcemaccel -noforcemspd -noforcemparms -glmdisablemtgl 1 -nojoy -d3d9ex -language bananagaming *
 
  -threads - number of cores
 
