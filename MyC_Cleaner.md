@@ -6,7 +6,7 @@ NOTE: MyC Cleaner will delete all files and later those files can't be restored.
 
 ## ScreenShots ##
 
-![http://myc.googlecode.com/svn/trunk/source/myc_cleaner.png](http://myc.googlecode.com/svn/trunk/source/myc_cleaner.png)
+![Image](https://raw.githubusercontent.com/sniperzik/myc/master/source/MyC%20Cleaner/myc_cleaner_v1.1.11.png)
 
 ## Change Log ##
 —– v1.1.11 ————————
