@@ -69,7 +69,6 @@ NOTE: DO NOT Click Ok or Apply in Options or you will save your settings
                 + C4 Located Script
                 + Silent Run Script
                 + Buy Script (Included BGSS)
-                + Simple Nick Change Script
                 + Warcraft 3 Mod Configs
                 + CSDM Script - Main weapon on spawn
         
