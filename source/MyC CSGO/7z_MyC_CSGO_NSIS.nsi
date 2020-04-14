@@ -1,3 +1,6 @@
+﻿;Enable Unicode encoding
+Unicode True
+
 ; Include
 !include "Sections.nsh"
 !include "LogicLib.nsh"
@@ -26,20 +29,20 @@
 
 ; GetSize	Add remove program entry
 !define ARP "Software\Microsoft\Windows\CurrentVersion\Uninstall\${APPNAME}"
-!include "FileFunc.nsh"
+
 
 ; Define your application name
-!define APPVERS "1.0.0.2" ; VERSION 
+!define APPVERS "1.0.0.5" ; VERSION 
 !define APPNAME "MyC CSGO"
 !define APPNAMEANDVERSION "${APPNAME} v${APPVERS}"
-!define APPYEAR "� 2015"
+!define APPYEAR "© 2020"
 !define APPWEB "MyC.Lv"
 !define APPAUTHOR "Sn^"
 !define APPPUBLISHER "MyC Project"
-!define APPSIZE "4007" ; MB : Bytes (45.1 x 1024 Bytes = 46182.4) ~ 46183 Bytes
+!define APPSIZE "1550" ; 1,55 MB (1 634 304 bytes) MB : Bytes (45.1 x 1024 Bytes = 46182.4) ~ 2 415 333 Bytes
 !define APPGAME "CSGO" ; To Use for all files. ${APPGAME}
 
-VIProductVersion "1.0.0.2" ; Ex. 1.0.0.0 VERSION - No Spaces!!!
+VIProductVersion "1.0.0.5" ; Ex. 1.0.0.0 VERSION - No Spaces!!!
 VIAddVersionKey "ProductName" "${APPNAME}"
 VIAddVersionKey "Comments" ""
 VIAddVersionKey "CompanyName" "${APPWEB} ${APPYEAR} by ${APPAUTHOR}"
@@ -47,6 +50,9 @@ VIAddVersionKey "LegalTrademarks" ""
 VIAddVersionKey "LegalCopyright" "${APPWEB} ${APPYEAR} by ${APPAUTHOR}"
 VIAddVersionKey "FileDescription" "${APPNAME} v${APPVERS}"
 VIAddVersionKey "FileVersion" "${APPVERS}"
+
+CRCCheck on
+SetCompressor /SOLID lzma
 
 ; Main Install settings
 Name "${APPNAMEANDVERSION}"
@@ -57,12 +63,13 @@ Icon "7z Installer Files\install.ico"
 UninstallIcon "7z Installer Files\uninstall.ico"
 
 ; Request application privileges for Windows Vista
-RequestExecutionLevel user
+RequestExecutionLevel Admin ;User
 
 !addplugindir "."
 
 ; Modern interface settings
 !include "MUI2.nsh"
+!include "FileFunc.nsh"
 
 ; Show Install Details
 ShowInstDetails show
@@ -75,7 +82,7 @@ ShowInstDetails show
 !define MUI_COMPONENTSPAGE_NODESC
 !define MUI_CUSTOMFUNCTION_GUIINIT onGUIInit ; Aero
 
-!insertmacro MUI_PAGE_WELCOME
+;!insertmacro MUI_PAGE_WELCOME
 !insertmacro MUI_PAGE_LICENSE "7z Installer Files\MyC_${APPGAME}_License.txt"
 ;!insertmacro MUI_PAGE_README "Installer Files\MyC_${APPGAME}_Readme.txt"
 ;!insertmacro MUI_PAGE_CHANGELOG "Installer Files\MyC_${APPGAME}_ChangeLog.log"
@@ -91,7 +98,7 @@ ShowInstDetails show
 	!define MUI_FINISHPAGE_SHOWREADME_NOTCHECKED
 	!define MUI_FINISHPAGE_SHOWREADME_TEXT "Show Readme"
 	!define MUI_FINISHPAGE_SHOWREADME_FUNCTION "RShortCuts"
-!insertmacro MUI_PAGE_FINISH
+;!insertmacro MUI_PAGE_FINISH
 
 !insertmacro MUI_UNPAGE_CONFIRM
 !insertmacro MUI_UNPAGE_INSTFILES
