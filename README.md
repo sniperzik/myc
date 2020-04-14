@@ -45,16 +45,17 @@ NOTE: DO NOT Click Ok or Apply in Options or you will save your settings
         
         --- Binds
         
-                Press F1 for Deagle + he, ammo, def                             
-                Press F2 for M4a1/Ak47 + ammo, vest, def        
-                Press F3 for Famas/Galil + ammo, def    
-                Press F4 for Eco&Granades + he, fl, sm, def     
-                Press F8 to Start Recording Demo and F8 to Stop Demo.
-                Press F9 or write R in Console to Reload MyC Config.
-                Press X to say_team C4 here with radio msg.             
-                Press V to Take Screenshot with Scorebar.
-                Press ALT to run silent walk script.
-                Add Your Scripts in Cstrike/MyC_cfg/Engine_User.cfg
+		Press F1 for Deagle + he, ammo, def				
+		Press F2 for M4a1/Ak47 + ammo, vest, def	
+		Press F3 for Famas/Galil + ammo, def	
+		Press F4 for Eco&Granades + he, fl, sm, def	
+		Press F9 or write R in Console to Reload MyC Config.
+		Press X to say_team C4 here with radio msg.		
+		Press ALT to run silent walk script.
+		Write D in Console to easy disconnect from your current server.
+		Write MICON or MICOFF in Console to easy enable or disable microphone bind to a F key.
+		Write '.0' to '.9' to adjust your in-game volume.
+		Add Your Scripts in Cstrike/MyC_cfg/Engine_User.cfg
         
         --- Configs status
         
