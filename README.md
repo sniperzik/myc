@@ -2,7 +2,7 @@
 
 * [MyC CS1.6 v3.0.1.16](https://github.com/sniperzik/myc/releases/download/v3.0.1.16/MyC_CS1.6_v3.0.1.16.exe)
 
-* [MyC CSGO v1.0.0.4](https://github.com/sniperzik/myc/releases/download/v1.0.0.4/MyC_CSGO_v1.0.0.4.exe)
+* [MyC CSGO v1.0.0.5](https://github.com/sniperzik/myc/releases/download/v1.0.0.5/MyC_CSGO_v1.0.0.5.exe)
 
 * [Video.txt](https://raw.githubusercontent.com/sniperzik/myc/master/video.txt) - Performance Settings for CS:GO  
 || New location: C:\Program Files (x86)\Steam\userdata\\<--ID-->\730\local\cfg\
@@ -113,6 +113,7 @@ NOTE: DO NOT Click Ok or Apply in Options or you will save your settings
 		Press X to say_team C4 here with radio msg.		
 		Write D in Console to easy disconnect from your current server.
 		Write MICON or MICOFF in Console to easy enable or disable microphone bind to a F key.
+		Write '.0' to '.9' to adjust your in-game volume.
 		Add Your Scripts in csgo/cfg/MyC_cfg/Engine_User.cfg
 	
 	--- Configs status
@@ -128,6 +129,7 @@ NOTE: DO NOT Click Ok or Apply in Options or you will save your settings
 		+ Buy Script
 		+ Disconnect Alias
 		+ Microphone Alias
+		+ Volume Alias (.0 to .9 in console)
 	
 	--- Included
 	
