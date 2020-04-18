@@ -1,0 +1,8 @@
+process name:
+process title:
+Use key:
+Choose button -> Scroll down list
+Delay -> Arrow Up, Down and Time in miliseconds
+Start/Stop Key -> Scroll down list
+
+Key List

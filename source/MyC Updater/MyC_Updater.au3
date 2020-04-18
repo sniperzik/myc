@@ -31,12 +31,12 @@
 ;** Target program Resource info
 #AutoIt3Wrapper_Res_Comment=Author: Sn^		;##	;Comment field
 #AutoIt3Wrapper_Res_Description=MyC Updater	;##	;Description field
-#AutoIt3Wrapper_Res_Fileversion=1.0.0.4
+#AutoIt3Wrapper_Res_Fileversion=1.0.0.5
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=N	;(Y/N/P)AutoIncrement FileVersion After Aut2EXE is finished. default=N
 ;                                                 P=Prompt, Will ask at Compilation time if you want to increase the versionnumber
 #AutoIt3Wrapper_Res_ProductVersion=				;Product Version. Default is the AutoIt3 version used.
 #AutoIt3Wrapper_Res_Language=					;Resource Language code . default 2057=English (United Kingdom)
-#AutoIt3Wrapper_Res_LegalCopyright=MyC.Lv © 2016 by Sn^;##		;Copyright field
+#AutoIt3Wrapper_Res_LegalCopyright=MyC.Lv © 2020 by Sn^;##		;Copyright field
 #AutoIt3Wrapper_res_requestedExecutionLevel=None;None, asInvoker, highestAvailable or requireAdministrator   (default=None)
 #AutoIt3Wrapper_Res_SaveSource=n				;(Y/N) Save a copy of the Scriptsource in the EXE resources. default=N
 ; If _Res_SaveSource=Y the content of Scriptsource depends on the _Run_Obfuscator and #obfuscator_parameters directives:
@@ -121,14 +121,11 @@ $fo1="cstrike\"
 $cs16="CS16"
 $fo6="csgo\"
 $v="v"
-$vers="1.0.0.4"
+$vers="1.0.0.5"
 $web="MyC.Lv"
 $author="Sn^"
-$year="2016"
+$year="2020"
 $copy="           "&$web&" © "&$year&" by "&$author
-; Delay
-$closeDelay = "5000" ; miliseconds = 5 sec.
-$showDelay = "500" ; 0.5 sec.
 ; MyC Config Folder
 $mycFolder = @ScriptDir
 ;//*****************************************************************************************
@@ -153,10 +150,7 @@ Opt("TrayIconHide", 1) ;0=show, 1=hide tray icon
 		Sleep(10)
 		$game=$csgo
 	Else
-		TrayTip("", "ERROR!!!" & @LF & @LF & "Can't find a folder." & @LF & @LF & "Reinstall "&$name&" in" & @LF & "Full game Folder as patch!",0,1)
-		Sleep($closeDelay)
-		TrayTip("", "Closing...",0,1)
-		Sleep($showDelay)
+		MsgBox(48,"ERROR","Can't find a folder." & @LF & @LF & "Reinstall "&$name&" in" & @LF & "Full game Folder as a patch!")
 		Exit
 	EndIf
 
@@ -213,8 +207,6 @@ Select
 		Exit
    
    Case $iMsgBoxAnswer = 7 ;No
-		TrayTip("", "Closing...",0,1)
-		Sleep($showDelay)
 		FileDelete(@ScriptDir & "\"&$name_&"_version.ini")
 		Exit
 	

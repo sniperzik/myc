@@ -2,12 +2,12 @@
 ;// Information
 ;//*****************************************************************************************
 ;// Name        : MyC Cleaner
-;// Version     : 1.1.12.0
+;// Version     : 1.0.0.0
 ;// Creator     : Sn^
 ;// E-mail      : sniperzik22@gmail.com
 ;// MyC Project : http://www.MyC.Lv/
 ;//*****************************************************************************************
-;#NoTrayIcon ;Disable tray icon
+#NoTrayIcon ;Disable tray icon
 #Region AutoIt3Wrapper directives section
 ;** This is a list of compiler directives used by AutoIt3Wrapper.exe.
 ;** Comment any unneeded lines as they will override any previous settings
@@ -23,7 +23,7 @@
 #AutoIt3Wrapper_Icon=MyC_Cleaner.ico            ;Filename of the Ico file to use for the compiled exe
 #AutoIt3Wrapper_OutFile=MyC_Cleaner.exe         ;Target exe/a3x filename.
 #AutoIt3Wrapper_OutFile_Type=exe                ;exe=Standalone executable (Default); a3x=Tokenised AutoIt3 code file
-AutoIt3Wrapper_Compression=2                   ;Compression parameter 0-4  0=Low 2=normal 4=High. Default=2
+#AutoIt3Wrapper_Compression=2                   ;Compression parameter 0-4  0=Low 2=normal 4=High. Default=2
 #AutoIt3Wrapper_UseUpx=Y                        ;(Y/N) Compress output program.  Default=Y
 #AutoIt3Wrapper_UPX_Parameters=                 ;Override the default settings for UPX.
 #AutoIt3Wrapper_Change2CUI=N                     ;(Y/N) Change output program to CUI in stead of GUI. Default=N
@@ -31,11 +31,11 @@ AutoIt3Wrapper_Compression=2                   ;Compression parameter 0-4  0=Low
 ;** Target program Resource info
 #AutoIt3Wrapper_Res_Comment=Author: Sn^         ;Comment field
 #AutoIt3Wrapper_Res_Description=MyC Cleaner     ;Description field
-#AutoIt3Wrapper_Res_Fileversion=1.1.12.0        ;File Version
+#AutoIt3Wrapper_Res_Fileversion=1.1.13.0        ;File Version
 #AutoIt3Wrapper_Res_FileVersion_AutoIncrement=N  ;(Y/N/P) AutoIncrement FileVersion after compile. Default=N
 ;                                                 P=Prompt, Will ask whether to increase the versionnumber
 #AutoIt3Wrapper_Res_Language=                   ;Resource Language code . Default 2057=English (United Kingdom)
-#AutoIt3Wrapper_Res_LegalCopyright=MyC.Lv © 2016 by Sn^             ;Copyright field
+#AutoIt3Wrapper_Res_LegalCopyright=MyC.Lv © 2020 by Sn^             ;Copyright field
 #AutoIt3Wrapper_res_requestedExecutionLevel=None    ;asInvoker, highestAvailable, requireAdministrator or None (remove the trsutInfo section).  Default is the setting from Aut2Exe (asInvoker)
 #AutoIt3Wrapper_res_Compatibility=              ;Vista,Windows7 Both allowed separated by a comma     (Default=None)
 #AutoIt3Wrapper_Res_SaveSource=N                 ;(Y/N) Save a copy of the Script_source in the EXE resources. Default=N
@@ -104,10 +104,10 @@ AutoIt3Wrapper_Compression=2                   ;Compression parameter 0-4  0=Low
 $name="MyC Cleaner"
 $name_="MyC_Cleaner"
 $v="v"
-$vers="1.1.12"
+$vers="1.1.13"
 $web="MyC.Lv"
 $author="Sn^"
-$year="2016"
+$year="2020"
 $copy="           "&$web&" © "&$year&" by "&$author
 ; MyC CS1.6 Folder
 $mycFolder = @ScriptDir
@@ -154,30 +154,25 @@ $fi2="gamestartup.mp3"
 #include <WindowsConstants.au3>
 #include <StaticConstants.au3>
 #include <GUIListBox.au3>
-Opt("TrayMenuMode",1)
+
 $file = @ScriptDir & "\"&$name_&".dat"
 
-; Files to Delete Msg CS1.6
-If FileExists($fo1) then
-	$filesToDeleteMsg = "Log, Crash, Demo, Snapshot, Cache, Media and Logo files will be DELETED!!!"
-Else
-	Sleep(10)
-EndIf
-; Files to Delete Msg CSGO
-If FileExists($fo6) then
-	$filesToDeleteMsg = "Crash, Demo, Data, Screenshot, Thumbnail and Cache files will be DELETED!!!"
-Else
-	Sleep(10)
-EndIf
+	; Files to Delete Msg CS1.6
+	If FileExists($fo1) then
+		$filesToDeleteMsg = "Log, Crash, Demo, Snapshot, Cache, Media and Logo files will be DELETED!!!"
+	; Files to Delete Msg CSGO
+	ElseIf FileExists($fo6) then
+		$filesToDeleteMsg = "Crash, Demo, Data, Screenshot, Thumbnail and Cache files will be DELETED!!!"
+	Else
+		MsgBox(48,"ERROR","Can't find a folder." & @LF & @LF & "Reinstall "&$name&" in" & @LF & "Full game Folder as a patch!")
+		Exit
+	EndIf
 
 ; 308 = 4 - Yes and No, 48 - Exclamation-point icon, 256 - Second button is default button
 If Not IsDeclared("iMsgBoxAnswer") Then Dim $iMsgBoxAnswer
 $iMsgBoxAnswer = MsgBox(308,"WARNING!!!",$filesToDeleteMsg & @LF & @LF & "Do you want to continue?")
 Select
    Case $iMsgBoxAnswer = 6 ;Yes
-   
-		TrayTip("", "Starting...",0,1)
-		Sleep($showDelay)
 
 		;CS1.6
 		If FileExists($fo1) then
@@ -186,10 +181,6 @@ Select
 		ElseIf FileExists($fo6) then
 			Sleep(10)
 		Else
-			TrayTip("", "ERROR!!!" & @LF & @LF & "Can't find a folder." & @LF & @LF & "Reinstall MyC Cleaner in" & @LF & "Full game Folder as patch!",0,1)
-			Sleep($closeDelay)
-			TrayTip("", "Closing...",0,1)
-			Sleep($showDelay)
 			Exit
 		EndIf
 
@@ -206,20 +197,14 @@ Select
 
 			;Check CS1.6 Process
 			If ProcessExists("hl.exe") Then
-				TrayTip("", "Please close Counter-Strike (hl.exe) process.",0,1)
-				Sleep($closeDelay)
-				TrayTip("", "Closing...",0,1)
-				Sleep($showDelay)
+				MsgBox(48,"WARNING","Please close Counter-Strike (hl.exe) process.")
 				Exit
 			Else
 				Sleep(10)
 			EndIf
 			;Check CSGO Process
 			If ProcessExists("csgo.exe") Then
-				TrayTip("", "Please close Counter-Strike Global Offensive (csgo.exe) process.",0,1)
-				Sleep($closeDelay)
-				TrayTip("", "Closing...",0,1)
-				Sleep($showDelay)
+				MsgBox(48,"WARNING","Please close Counter-Strike Global Offensive (csgo.exe) process.")
 				Exit
 			Else
 				Sleep(10)
@@ -228,30 +213,22 @@ Select
 	; Clean Files - CS1.6
 			If FileExists($fo1) Then
 				FileDelete("*.log") ; Delete Log Files
-				TrayTip("", "Cleaned: Log Files",0,1) ; \
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
 			If FileExists($fo1) Then
 				FileDelete("*.mdmp") ; Delete Crash Files
 				FileDelete($fo1&"*.mdmp") ; Delete Crash Files
-				TrayTip("", "Cleaned: Crash Files",0,1) ; \
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
 			If FileExists($fo1) Then
 				FileDelete($fo1&"*.dem") ; Delete Demo Files
-				TrayTip("", "Cleaned: Demo Files",0,1) ; \cstrike\
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
 			If FileExists($fo1) Then
 				FileDelete($fo1&"*.bmp") ; Delete Snapshot Files
-				TrayTip("", "Cleaned: Snapshot Files",0,1) ; \cstrike\
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
@@ -259,36 +236,26 @@ Select
 				FileDelete($fo1&$fi1) ; Delete custom.hpk File
 				$hpk = FileOpen($fo1&$fi1, 1) 
 				FileWrite($hpk, "") ; Create custom.hpk File
-				TrayTip("", "Cleaned: custom.hpk File",0,1) ; \cstrike\
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
 			If FileExists($fo1&$fo5) Then
 				FileDelete($fo1&"*.bsp0000") ; Delete Cache Files
-				TrayTip("", "Cleaned: Cache Files",0,1) ; \cstrike\
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
 			If FileExists($fo1&$fo3) Then
 				FileDelete($fo1&$fo3&"*.bmp") ; Delete Logo Files
-				TrayTip("", "Cleaned: Logo Files",0,1) ; \cstrike\
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
 			If FileExists($fo2&$fo3) Then
 				FileDelete($fo2&$fo3&"*.bmp") ; Delete Logo Files
-				TrayTip("", "Cleaned: Logo Files",0,1) ; \valve\
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
 			If FileExists($fo1&$fo4&$fi2) Then
 				FileDelete($fo1&$fo4&$fi2) ; Delete gamestartup.mp3 File
-				TrayTip("", "Cleaned: Media Files",0,1) ; \cstrike\
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
@@ -296,45 +263,33 @@ Select
 	; Clean Files - CSGO
 			If FileExists($fo6) Then
 				FileDelete("*.mdmp") ; Delete .mdmp (Crash/Access Violation) Files
-				TrayTip("", "Cleaned: Crash Files",0,1) ; \
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
 			If FileExists($fo6) Then
 				FileDelete($fo6&"*.dem") ; Delete Demo Files
-				TrayTip("", "Cleaned: Demo Files",0,1) ; \
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
 			If FileExists($fo6&$fo7) Then
 				FileDelete($fo6&$fo7&"*.jpg") ; Delete Stream Thumbnail Files
-				TrayTip("", "Cleaned: Thumbnail Files",0,1) ; \
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf	
 			If FileExists($fo6&$fo8) Then
 				FileDelete($fo6&$fo8&"*.tga") ; Delete TGA Files
 				FileDelete($fo6&$fo8&"*.jpg") ; Delete JPG Files
-				TrayTip("", "Cleaned: Screenshot Files",0,1) ; \
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
 			If FileExists($fo6&$fo9) Then
 				FileDelete($fo6&$fo9&"*.dat") ; Delete Data Files
-				TrayTip("", "Cleaned: Data Files",0,1) ; \
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
 			If FileExists($fo6&$fo10) Then
 				FileDelete($fo6&$fo10&"*.bsp0000") ; Delete bsp0000 Files
 				FileDelete($fo6&$fo10&"*.bz20000") ; Delete bz20000 Files
-				TrayTip("", "Cleaned: Cache Files",0,1) ; \
-				Sleep($showDelay)
 			Else
 				Sleep(10)
 			EndIf
@@ -364,17 +319,12 @@ Select
 			$date = IniRead($file, "LastTimeCleaned", "LastDate", "")
 		EndIf
 		
-		TrayTip("", "Finished...",0,1)
-		Sleep($showDelay)
-		
 		Msgbox(0,$name & " " & $vers,"Before Cleaning:   " & $100p & "% (" & $allsize & "Mb)" & @LF & "After Cleaning:      " & $leftp & "% (" & $leftsize & "Mb)" & @LF & "______________________________________" & @LF & "Total Cleaned:       " & $cleanedp & "% (" & $cleaned & "Mb)" & @LF & @LF & "Last Run: " & $date & @LF & "______________________________________" & @LF & $copy)
 		
 		; Write Date
 		IniWrite($file, "LastTimeCleaned", "LastDate", $time)
 		
-   Case $iMsgBoxAnswer = 7 ;No
-		TrayTip("", "Closing...",0,1)
-		Sleep($showDelay)
+   Case $iMsgBoxAnswer = 7 ;No)
 		Exit
 	
 EndSelect

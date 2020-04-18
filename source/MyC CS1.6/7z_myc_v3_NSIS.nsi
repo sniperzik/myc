@@ -32,7 +32,7 @@ Unicode True
 !include "FileFunc.nsh"
 
 ; Define your application name
-!define APPVERS "3.0.1.17" ; VERSION 
+!define APPVERS "3.0.1.18" ; VERSION 
 !define APPNAME "MyC CS1.6"
 !define APPNAMEANDVERSION "${APPNAME} v${APPVERS}"
 !define APPYEAR "© 2020"
@@ -42,7 +42,7 @@ Unicode True
 !define APPSIZE "46183" ; MB : Bytes (45.1 x 1024 Bytes = 46182.4) ~ 46183 Bytes
 !define APPGAME "CS1.6" ; To Use for all files. ${APPGAME}
 
-VIProductVersion "3.0.1.17" ; VERSION - No Spaces!!!
+VIProductVersion "3.0.1.18" ; VERSION - No Spaces!!!
 VIAddVersionKey "ProductName" "${APPNAME}"
 VIAddVersionKey "Comments" ""
 VIAddVersionKey "CompanyName" "${APPWEB} ${APPYEAR} by ${APPAUTHOR}"
