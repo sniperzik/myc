@@ -54,8 +54,7 @@ section {
 	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
-	min-width: 160px;
-	max-width: 220px;
+	width: 220px;
 	max-height: 100px;
 	width: 48%;
 	background: #3085a3;
@@ -68,7 +67,7 @@ section {
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.8;
+	opacity: 0.7;
 }
 
 .grid figure figcaption {
@@ -262,8 +261,8 @@ figure.effect-roxy {
 figure.effect-roxy img {
 	border-top:1px solid #05abe0;
 	max-width: none;
-	width: -webkit-calc(100% + 60px);
-	width: calc(100% + 60px);
+	width: -webkit-calc(100%);
+	width: calc(100%);
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(4px,0,0);

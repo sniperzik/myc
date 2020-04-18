@@ -1,0 +1,8 @@
+
+
+
+Image Optimization + icon
+Load External Data on Modal
+Use JSON data to display lastest version, download links.
+Update steam, github button to blue, to represent purple-blue theme.
+Background image rotation. (Done right) JSON, js?
