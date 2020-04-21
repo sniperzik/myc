@@ -1249,7 +1249,7 @@ footer{
 	background-color: #336699;
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#336699),to(#3299CC));
 	background-image: -moz-linear-gradient(top,#336699,#3299CC);
-	background-image: linear-gradient(top,#336699,#3299CC);
+	background-image: linear-gradient(to top,#336699,#3299CC);
 }
  
 .steam-group-button:focus, .steam-group-button:hover, .steam-group-button:active {
@@ -1258,7 +1258,7 @@ footer{
 	background-color: #38B0DE;
 	background-image: -webkit-gradient(linear,left top,left bottom,from(#38B0DE),to(#539DC2));
 	background-image: -moz-linear-gradient(top,#38B0DE,#539DC2);
-	background-image: linear-gradient(top,#38B0DE,#539DC2);
+	background-image: linear-gradient(to top,#38B0DE,#539DC2);
 	box-shadow: none;
 }
  
