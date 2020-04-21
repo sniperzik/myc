@@ -30,12 +30,12 @@ h4{
 
 a {
 	outline: none;
-	color: #3498db;
+	color: #336699;
 	text-decoration: none;
 }
 
 a:hover, a:focus {
-	color: #528cb3;
+	color: #38B0DE;
 }
 
 section {
@@ -1214,6 +1214,7 @@ figure.effect-chico:hover p {
 }
 
 small {
+	color:#111;
 	font-weight: 400;
 	font-size: 1.5em;
 }
