@@ -1314,27 +1314,3 @@ footer{
 .github-label {
 	padding: 0 7px 0 26px;
 }
-
-/* ETC */
-.hidden {
-	position: absolute;
-	overflow: hidden;
-	width: 0;
-	height: 0;
-	/*pointer-events: none;*/
-}
-
-.github {
-	display: block;
-	align-self: end;
-	grid-area: github;
-	justify-self: start;
-}
-
-/* Icons */
-.icon {
-	display: block;
-	width: 1.5em;
-	height: 1.5em;
-	margin: 0 auto;
-}
