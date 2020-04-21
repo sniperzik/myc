@@ -1218,8 +1218,10 @@ small {
 	font-size: 1.5em;
 }
 footer{
-	margin:50% 0 0 0;
-	
+	width:460px;
+	float:left;
+	position: static;
+	margin:100px 6px 50px;
 }
 
 
