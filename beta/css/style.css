@@ -1070,7 +1070,7 @@ figure.effect-zoe p.icon-links a span::before {
 	display: inline-block;
 	padding: 8px 10px;
 	font-family: 'feathericons';
-	speak: none;
+	speak: never;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -1336,9 +1336,4 @@ footer{
 	width: 1.5em;
 	height: 1.5em;
 	margin: 0 auto;
-	fill: currentColor;
-}
-
-.icon--keyboard {
-	display: none;
 }
