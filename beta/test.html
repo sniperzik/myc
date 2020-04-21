@@ -32,8 +32,9 @@
 </picture-->
 
 
-
-<img src="img/loader.svg" alt=loader />
+<span class="flex justify-center">
+<img  src="img/loader.svg" alt="loader" />
+</span>
 
 
 <div
@@ -77,8 +78,10 @@
 
             "
             >
-      <a x-text='`${downloadLink}`' href="x-text='`${downloadLink}`'
-      ">Download</a>
+      <div
+          class="flex items-center text-center justify-center text-2xl italic"
+          x-text='`${downloadLink}`'
+      ></div> 
   </div>
 
 <span x-data="{ number: Math.floor(Math.random() * 5) + 1 }" x-text="number"></span>
