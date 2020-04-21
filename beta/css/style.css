@@ -11,6 +11,7 @@ body {
 
 h3{
 	color: #fff;
+ 	text-shadow: 2px 2px 5px #000000;
 	font-weight: 400;
 	font-size: 2.5em;
 	margin: 85px 0 70px 0;
@@ -255,6 +256,7 @@ figure.effect-sadie:hover p {
 /*---------------*/
 
 figure.effect-roxy {
+	text-shadow: 2px 2px 3px #000000;
 	background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
 	background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
 }
@@ -1237,20 +1239,20 @@ footer{
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 	
-	border: #333 solid 1px;
-	background-color: #4D4B48;
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#4D4B48),to(#111));
-	background-image: -moz-linear-gradient(top,#4D4B48,#111);
-	background-image: linear-gradient(top,#4D4B48,#111);
+	border: #336699 solid 1px;
+	background-color: #336699;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#336699),to(#3299CC));
+	background-image: -moz-linear-gradient(top,#336699,#3299CC);
+	background-image: linear-gradient(top,#336699,#3299CC);
 }
  
 .steam-group-button:focus, .steam-group-button:hover, .steam-group-button:active {
 	color: #FFF;
-	border-color: #111;
-	background-color: #333;
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#444),to(#111));
-	background-image: -moz-linear-gradient(top,#444,#111);
-	background-image: linear-gradient(top,#444,#111);
+	border-color: #38B0DE;
+	background-color: #38B0DE;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#38B0DE),to(#539DC2));
+	background-image: -moz-linear-gradient(top,#38B0DE,#539DC2);
+	background-image: linear-gradient(top,#38B0DE,#539DC2);
 	box-shadow: none;
 }
  
@@ -1272,8 +1274,6 @@ footer{
 	padding: 0 7px 0 26px;
 }
 
-
-
 .github-button {
 	font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
 	height: 28px;
@@ -1293,20 +1293,20 @@ footer{
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 	
-	border: #333 solid 1px;
-	background-color: #4D4B48;
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#4D4B48),to(#111));
-	background-image: -moz-linear-gradient(top,#4D4B48,#111);
-	background-image: linear-gradient(top,#4D4B48,#111);
+	border: #336699 solid 1px;
+	background-color: #336699;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#336699),to(#3299CC));
+	background-image: -moz-linear-gradient(top,#336699,#3299CC);
+	background-image: linear-gradient(top,#336699,#3299CC);
 }
  
 .github-button:focus, .github-button:hover, .github-button:active {
 	color: #FFF;
-	border-color: #111;
-	background-color: #333;
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#444),to(#111));
-	background-image: -moz-linear-gradient(top,#444,#111);
-	background-image: linear-gradient(top,#444,#111);
+	border-color: #38B0DE;
+	background-color: #38B0DE;
+	background-image: -webkit-gradient(linear,left top,left bottom,from(#38B0DE),to(#539DC2));
+	background-image: -moz-linear-gradient(top,#38B0DE,#539DC2);
+	background-image: linear-gradient(top,#38B0DE,#539DC2);
 	box-shadow: none;
 }
  

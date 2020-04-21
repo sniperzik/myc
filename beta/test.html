@@ -1,7 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+<script type="text/javascript">
+$(window).load(function() {
+    $('#loader').hide();
+    setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+  }); 
+</script>
+<style type="text/css">
+  
+#main {
+  background:#f9f9f9 url('./img/bg/bg1.jpg') top center no-repeat;
+  width: 100%;
+}
 
-  <script type="text/javascript">
-fetch('https://raw.githubusercontent.com/sniperzik/myc/wiki/ChangeLog.md')
-  .then((data) => {
-    echo(data);
-  });
-  </script>
+</style>
+</head>
+<body id=main>
+
+
+        <div id=loader>
+          Loader
+          <svg class="lds-message" width="80px"  height="80px"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid"><g transform="translate(20 50)">
+          <circle cx="0" cy="0" r="7" fill="#e15b64" transform="scale(0.99275 0.99275)">
+            <animateTransform attributeName="transform" type="scale" begin="-0.375s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+          </circle>
+          </g><g transform="translate(40 50)">
+          <circle cx="0" cy="0" r="7" fill="#f47e60" transform="scale(0.773605 0.773605)">
+            <animateTransform attributeName="transform" type="scale" begin="-0.25s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+          </circle>
+          </g><g transform="translate(60 50)">
+          <circle cx="0" cy="0" r="7" fill="#f8b26a" transform="scale(0.42525 0.42525)">
+            <animateTransform attributeName="transform" type="scale" begin="-0.125s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+          </circle>
+          </g><g transform="translate(80 50)">
+          <circle cx="0" cy="0" r="7" fill="#abbd81" transform="scale(0.113418 0.113418)">
+            <animateTransform attributeName="transform" type="scale" begin="0s" calcMode="spline" keySplines="0.3 0 0.7 1;0.3 0 0.7 1" values="0;1;0" keyTimes="0;0.5;1" dur="1s" repeatCount="indefinite"></animateTransform>
+          </circle>
+          </g>
+          </svg>
+      </div>
+
+
+
+<div
+    class="container mx-auto px-4"
+    x-data="{ name:'' }"
+    x-init="
+                fetch('https://myc.lv/settings.json')
+                    .then(res => res.json())
+                    .then(data => name = data.game[0].name)
+            "
+>
+    <div
+        class="flex items-center text-center justify-center text-2xl italic"
+        x-text='`${name}`'
+    ></div>
+</div>
+
+<div 
+    class="container mx-auto px-4"
+    x-data="{ latestVersion:'' }"
+    x-init="
+                fetch('https://myc.lv/settings.json')
+                    .then(res => res.json())
+                    .then(data => latestVersion = data.game[0].latestVersion)
+
+            "
+            >
+      <div
+          class="flex items-center text-center justify-center text-2xl italic"
+          x-text='`${latestVersion}`'
+      ></div> 
+  </div>
+
+<div 
+    class="container mx-auto px-4"
+    x-data="{ downloadLink:'' }"
+    x-init="
+                fetch('https://myc.lv/settings.json')
+                    .then(res => res.json())
+                    .then(data => downloadLink = data.game[0].downloadLink)
+
+            "
+            >
+      <div
+          class="flex items-center text-center justify-center text-2xl italic"
+          x-text='`${downloadLink}`'
+      ></div> 
+  </div>
+
+<span x-data="{ number: Math.floor(Math.random() * 5) + 1 }" x-text="number"></span>
+
+&copy; <span x-data="{ year: (new Date()).getFullYear() }" x-text="year"></span>
+</body>
+</html>
