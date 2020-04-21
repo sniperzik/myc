@@ -2,9 +2,6 @@
 
 New bg images? Image Optimization
 
-
 Use JSON data to display lastest version, download links?
-
 Background image rotation. (Done right) Alpine.js?
-
 Alpine loader?
