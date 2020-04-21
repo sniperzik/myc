@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+  font-display: swap;
+}
 body {
 	background:#f9f9f9;
 	color: #999;
@@ -21,18 +28,14 @@ h4{
 	border-bottom:1px solid #f1f1f1;
 }
 
-.main {
-	background:#f9f9f9 url('../img/bg/bg1.jpg') top center no-repeat;
-	width: 100%;
-}
 a {
 	outline: none;
-	color: #3498db;
+	color: #336699;
 	text-decoration: none;
 }
 
 a:hover, a:focus {
-	color: #528cb3;
+	color: #38B0DE;
 }
 
 section {
@@ -1211,12 +1214,15 @@ figure.effect-chico:hover p {
 }
 
 small {
+	color:#111;
 	font-weight: 400;
 	font-size: 1.5em;
 }
 footer{
-	margin:50% 0 0 0;
-	
+	width:460px;
+	float:left;
+	position: static;
+	margin:100px 6px 50px;
 }
 
 
@@ -1258,16 +1264,6 @@ footer{
  
 .steam-group-button:active {
 	box-shadow: inset 0 3px 7px rgba(255,255,255,0.15);
-}
- 
-.steam-group-icon {
-	width: 16px;
-	height: 16px;
-	left: 4px;
-	margin-top: -8px;
-	position: absolute;
-	top: 50%;
-	background: transparent url('../img/steam.png') 0 0 no-repeat;
 }
  
 .steam-group-label {
@@ -1313,17 +1309,7 @@ footer{
 .github-button:active {
 	box-shadow: inset 0 3px 7px rgba(255,255,255,0.15);
 }
- 
-.github-icon {
-	width: 16px;
-	height: 16px;
-	left: 4px;
-	margin-top: -8px;
-	position: absolute;
-	top: 50%;
-	background: transparent url('../img/github.png') 0 0 no-repeat;
-}
- 
+
 .github-label {
 	padding: 0 7px 0 26px;
 }
