@@ -1,3 +1,8 @@
+-- v1.0.0.6 ------- 
+ * Fixed Check if csgo.exe process exist
+ * Updated MyC Updater
+ * Updated MyC Cleaner
+ 
 -- v1.0.0.5 ------- 
  * Added Volume alias
  * Updated In-game Music values
