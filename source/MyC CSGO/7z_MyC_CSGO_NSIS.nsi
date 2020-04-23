@@ -34,13 +34,13 @@ Unicode True
 ; Define your application name
 !define APPVERS "1.0.0.6" ; VERSION 
 !define APPNAME "MyC CSGO"
+!define APPGAME "CSGO" ; To Use for all files. ${APPGAME}
 !define APPNAMEANDVERSION "${APPNAME} v${APPVERS}"
 !define APPYEAR "© 2020"
 !define APPWEB "MyC.Lv"
 !define APPAUTHOR "Sn^"
 !define APPPUBLISHER "MyC Project"
 !define APPSIZE "1550" ; 1,55 MB (1 634 304 bytes) MB : Bytes (45.1 x 1024 Bytes = 46182.4) ~ 2 415 333 Bytes
-!define APPGAME "CSGO" ; To Use for all files. ${APPGAME}
 
 VIProductVersion "1.0.0.6" ; Ex. 1.0.0.0 VERSION - No Spaces!!!
 VIAddVersionKey "ProductName" "${APPNAME}"
