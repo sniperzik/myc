@@ -34,13 +34,13 @@ Unicode True
 ; Define your application name
 !define APPVERS "3.0.1.18" ; VERSION 
 !define APPNAME "MyC CS1.6"
+!define APPGAME "CS1.6" ; To Use for all files. ${APPGAME}
 !define APPNAMEANDVERSION "${APPNAME} v${APPVERS}"
 !define APPYEAR "© 2020"
 !define APPWEB "MyC.Lv"
 !define APPAUTHOR "Sn^"
 !define APPPUBLISHER "MyC Project"
 !define APPSIZE "46183" ; MB : Bytes (45.1 x 1024 Bytes = 46182.4) ~ 46183 Bytes
-!define APPGAME "CS1.6" ; To Use for all files. ${APPGAME}
 
 VIProductVersion "3.0.1.18" ; VERSION - No Spaces!!!
 VIAddVersionKey "ProductName" "${APPNAME}"
