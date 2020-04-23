@@ -1,0 +1,46 @@
+.webp .main {
+  background:#f9f9f9 url('img/bg1.webp') top center no-repeat;
+  width: 100%;
+}
+.no-webp .main {
+  background:#f9f9f9 url('img/bg1.jpg') top center no-repeat;
+  width: 100%;
+}
+.webp .github-icon {
+	width: 16px;
+	height: 16px;
+	left: 4px;
+	margin-top: -8px;
+	position: absolute;
+	top: 50%;
+	background: transparent url('img/github.webp') 0 0 no-repeat;
+}
+
+.no-webp .github-icon {
+	width: 16px;
+	height: 16px;
+	left: 4px;
+	margin-top: -8px;
+	position: absolute;
+	top: 50%;
+	background: transparent url('img/github.png') 0 0 no-repeat;
+}
+.webp .steam-group-icon {
+	width: 16px;
+	height: 16px;
+	left: 4px;
+	margin-top: -8px;
+	position: absolute;
+	top: 50%;
+	background: transparent url('img/steam.webp') 0 0 no-repeat;
+}
+
+.no-webp .steam-group-icon {
+	width: 16px;
+	height: 16px;
+	left: 4px;
+	margin-top: -8px;
+	position: absolute;
+	top: 50%;
+	background: transparent url('img/steam.png') 0 0 no-repeat;
+}
