@@ -1220,7 +1220,8 @@ small {
 	font-size: 1.5em;
 }
 footer{
-	width:460px;
+	max-width:460px;
+	min-width:300px;
 	float:left;
 	position: static;
 	margin:100px 6px 50px;
