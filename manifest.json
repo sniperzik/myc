@@ -1,0 +1,17 @@
+{
+  "short_name": "MyC.Lv",
+  "name": "MyC.Lv - Make Your Creation - High Performance Game Configuration - CS:GO, CS1.6 - Counter-Strike: Global Offensive, Counter-Strike 1.6",
+  "description": "MyC.Lv - Make Your Creation - High Performance Game Configuration. This installation adds to your cs better configs and specifications. Simple, useful and effective configs for Counter Strike 1.6 and Counter Strike: Global Offensive (Tested on Non-Steam and Steam.) Install in full Counter-Strike folder as patch!",
+  "icons": [
+    {
+      "src": "/img/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#006699",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#006699"
+}
