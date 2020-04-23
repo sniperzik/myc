@@ -1,3 +1,7 @@
+-- v3.0.1.18 -------
+ * Updated MyC Updater
+ * Updated MyC Cleaner
+ 
 -- v3.0.1.17 -------
  * Added Volume alias
  * Added Microphone alias
