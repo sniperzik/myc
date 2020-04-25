@@ -1,3 +1,5 @@
+![Image](https://myc.lv/img/mps.png)
+
 ## Downloads ##
 
 * [MyC CS1.6 v3.0.1.18](https://github.com/sniperzik/myc/releases/download/v3.0.1.18/MyC_CS1.6_v3.0.1.18.exe)
@@ -31,7 +33,7 @@
 
   * **Is there any Spyware in MyC Config?** - No, never! Also you can check our source, to be sure.
 
-  * **How to fix default Valve logo?** - After you installed MyC Config you should have to be custom logo.
+  * **How to fix default Valve logo (CS1.6)?** - After you installed MyC Config you should have to be custom logo.
 NOTE: DO NOT Click Ok or Apply in Options or you will save your settings
 
   * **[MyC Cleaner?](https://github.com/sniperzik/myc/blob/wiki/MyC_Cleaner.md)**
