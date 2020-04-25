@@ -111,11 +111,14 @@ function gestureStart(){for(i=0;i<metas.length;i++){if(metas[i].name=="viewport"
 	</div>
 	</main>
     <script>var d = new Date();var n = d.getFullYear();document.getElementById("year").innerHTML = n;</script>
-    <script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
 	<script>
-	var galite = galite || {};
-	galite.UA = 'UA-30115765-1';
-	galite.anonymizeIp = true;
+	(function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
+;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
+;c.parentNode.insertBefore(a,c)
+})(window,document,"galite","script","https://cdn.jsdelivr.net/npm/ga-lite@2/dist/ga-lite.min.js");
+
+galite('create', 'UA-30115765-1', 'auto');
+galite('send', 'pageview');
 	</script>
 	</body>
 </html>
