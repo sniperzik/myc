@@ -7,7 +7,7 @@
 * [Video.txt](https://raw.githubusercontent.com/sniperzik/myc/master/video.txt) - Video Performance Settings for **CS:GO**  
 || **New location**: C:\Program Files (x86)\Steam\userdata\\<--ID-->\730\local\cfg\
 || Need to have **Read-Only** properties, so CS:GO can't rewrite it automatically.
-* [SetLaunchOptions.txt](https://github.com/sniperzik/myc/blob/master/source/MyC%20CSGO/7z%20Installer%20Files/SetLaunchOptions.txt) SetLaunchOptions for **CS:GO**
+* [SetLaunchOptions.txt](https://github.com/sniperzik/myc/blob/master/source/MyC%20CSGO/7z%20Installer%20Files/SetLaunchOptions.txt) SetLaunchOptions for **CS:GO**  
 || Example: -freq 144 -novid -console -high -threads 8 -tickrate 128 -processheap -noforcemaccel -noforcemspd -noforcemparms -glmdisablemtgl 1 -nojoy -d3d9ex -language bananagaming
 
 ## About ##
