@@ -3,7 +3,7 @@
  * Check your PC specs and add SetLaunchOptions as you need *
 
 My PC: Phenom II, 4GB Ram, 512Mb Video
-My SetLaunchOptions: -w 1024 -h 768 -32bpp -high -dxlevel 60 -gl -heapsize 1048576 -dev -nojoy -noipx -noforcemspd -noforcemparms -noforcemaccel
+My SetLaunchOptions: -freq 144 -high -gl -heapsize 1048576 -dev -nojoy -noipx -noforcemspd -noforcemparms -noforcemaccel
 
 ---
 Add this to fix CS1.6 steam video ratio and mouse fix.
