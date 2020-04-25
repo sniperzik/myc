@@ -2,7 +2,6 @@
 
  * Check your PC specs and add SetLaunchOptions as you need *
 
-My PC: Phenom II, 4GB Ram, 512Mb Video
 My SetLaunchOptions: -freq 144 -high -gl -heapsize 1048576 -dev -nojoy -noipx -noforcemspd -noforcemparms -noforcemaccel
 
 ---
