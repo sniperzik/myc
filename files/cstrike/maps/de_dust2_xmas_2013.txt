@@ -1,0 +1,23 @@
+Dust II - Bomb/Defuse
+by DaveJ (http://www.johnsto.co.uk/)
+
+Xmas theme by Robeloto (robeloto@hotmail.com)
+
+Merry Christmas Everyone!
+
+It is a really cold christmas day and Santa
+has left some presents on the map.
+
+Counter-Terrorists: Prevent Terrorists
+from bombing chemical weapon crates.
+Team members must defuse any bombs 
+that threaten targeted areas.
+
+Terrorists: The Terrorist carrying the
+C4 must destroy one of the chemical 
+weapon stashes. 
+
+Other Notes: There are 2 chemical 
+weapon stashes in the mission. 
+
+(Press FIRE to continue)

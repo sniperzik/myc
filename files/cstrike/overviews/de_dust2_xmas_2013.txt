@@ -1,0 +1,14 @@
+// overview description file for de_dust2_xmas_2013.bsp by Robeloto
+
+global 
+{
+	ZOOM	1.34
+	ORIGIN	-208 	48	80
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/de_dust2_xmas_2013.bmp"
+	HEIGHT	-192
+}
