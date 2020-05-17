@@ -26,6 +26,7 @@
 		Press F6 for Default AutoBuy.
 		Press F9 or write R in Console to Reload MyC Config.
 		Press X to say_team C4 here with radio msg.		
+		Press C to Jumpthrow.	
 		Write D in Console to easy disconnect from your current server.
 		Write MICON or MICOFF in Console to easy enable or disable microphone bind to a F key.
 		Write '.0' to '.9' to adjust your in-game volume.
@@ -45,6 +46,7 @@
 		+ Disconnect Alias
 		+ Microphone Alias
 		+ Volume Alias (.0 to .9 in console)
+		+ Jumpthrow Script
 	
 	--- Included
 	
