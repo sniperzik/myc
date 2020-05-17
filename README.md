@@ -1,11 +1,16 @@
+![Image](https://myc.lv/img/mps.png)
+
 ## Downloads ##
 
-* [MyC CS1.6 v3.0.1.17](https://github.com/sniperzik/myc/releases/download/v3.0.1.17/MyC_CS1.6_v3.0.1.17.exe)
+* [MyC CS1.6 v3.0.1.18](https://github.com/sniperzik/myc/releases/download/v3.0.1.18/MyC_CS1.6_v3.0.1.18.exe)
 
-* [MyC CSGO v1.0.0.5](https://github.com/sniperzik/myc/releases/download/v1.0.0.5/MyC_CSGO_v1.0.0.5.exe)
+* [MyC CSGO v1.0.0.6](https://github.com/sniperzik/myc/releases/download/v1.0.0.6/MyC_CSGO_v1.0.0.6.exe)
 
-* [Video.txt](https://raw.githubusercontent.com/sniperzik/myc/master/video.txt) - Performance Settings for CS:GO  
-|| New location: C:\Program Files (x86)\Steam\userdata\\<--ID-->\730\local\cfg\
+* [Video.txt](https://raw.githubusercontent.com/sniperzik/myc/master/video.txt) - Video Performance Settings for **CS:GO**  
+|| **New location**: C:\Program Files (x86)\Steam\userdata\\<--ID-->\730\local\cfg\
+|| Need to have **Read-Only** properties, so CS:GO can't rewrite it automatically.
+* [SetLaunchOptions.txt](https://github.com/sniperzik/myc/blob/master/source/MyC%20CSGO/7z%20Installer%20Files/SetLaunchOptions.txt) SetLaunchOptions for **CS:GO**  
+|| Example: -freq 144 -novid -console -high -threads 8 -tickrate 128 -processheap -noforcemaccel -noforcemspd -noforcemparms -glmdisablemtgl 1 -nojoy -d3d9ex -language bananagaming
 
 ## About ##
 
@@ -28,7 +33,7 @@
 
   * **Is there any Spyware in MyC Config?** - No, never! Also you can check our source, to be sure.
 
-  * **How to fix default Valve logo?** - After you installed MyC Config you should have to be custom logo.
+  * **How to fix default Valve logo (CS1.6)?** - After you installed MyC Config you should have to be custom logo.
 NOTE: DO NOT Click Ok or Apply in Options or you will save your settings
 
   * **[MyC Cleaner?](https://github.com/sniperzik/myc/blob/wiki/MyC_Cleaner.md)**
