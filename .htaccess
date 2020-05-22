@@ -5,8 +5,8 @@ RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
-RewriteRule ^/download/1/v([0-9-/]+)$ https://github.com/sniperzik/myc/releases/download/v$1/MyC_CS1.6_v$1.exe [QSA,L]
-RewriteRule ^/download/2/v([0-9-/]+)$ https://github.com/sniperzik/myc/releases/download/v$1/MyC_CSGO_v$1.exe [QSA,L]
+RewriteRule ^/download/1/v([\.0-9-/]+)$ https://github.com/sniperzik/myc/releases/download/v$1/MyC_CS1.6_v$1.exe [QSA,L]
+RewriteRule ^/download/2/v([\.0-9-/]+)$ https://github.com/sniperzik/myc/releases/download/v$1/MyC_CSGO_v$1.exe [QSA,L]
 </IfModule>
 
 <IfModule mod_deflate.c>
