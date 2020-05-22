@@ -1,6 +1,5 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /
 RewriteRule ^/download/1/v([\.0-9-/]+)$ https://github.com/sniperzik/myc/releases/download/v$1/MyC_CS1.6_v$1.exe [L]
 RewriteRule ^/download/2/v([\.0-9-/]+)$ https://github.com/sniperzik/myc/releases/download/v$1/MyC_CSGO_v$1.exe [L]
 </IfModule>
