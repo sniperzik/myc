@@ -1,3 +1,9 @@
+ -- v1.0.0.7 ------- 
+ * Added Jumpthrow
+ * Added r_cleardecals when moving forward
+ * Updated MVP volume
+ * Minor installer fixes
+
 -- v1.0.0.6 ------- 
  * Fixed Check if csgo.exe process exist
  * Updated MyC Updater
