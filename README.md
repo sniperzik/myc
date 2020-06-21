@@ -4,7 +4,7 @@
 
 * [MyC CS1.6 v3.0.1.18](https://github.com/sniperzik/myc/releases/download/v3.0.1.18/MyC_CS1.6_v3.0.1.18.exe)
 
-* [MyC CSGO v1.0.0.6](https://github.com/sniperzik/myc/releases/download/v1.0.0.6/MyC_CSGO_v1.0.0.6.exe)
+* [MyC CSGO v1.0.0.7](https://github.com/sniperzik/myc/releases/download/v1.0.0.7/MyC_CSGO_v1.0.0.7.exe)
 
 * [Video.txt](https://raw.githubusercontent.com/sniperzik/myc/master/video.txt) - Video Performance Settings for **CS:GO**  
 || **New location**: C:\Program Files (x86)\Steam\userdata\\<--ID-->\730\local\cfg\
