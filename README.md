@@ -2,7 +2,7 @@
 
 ## Downloads ##
 
-* [MyC CS1.6 v3.0.1.18](https://github.com/sniperzik/myc/releases/download/v3.0.1.18/MyC_CS1.6_v3.0.1.18.exe)
+* [MyC CS1.6 v3.0.1.19](https://github.com/sniperzik/myc/releases/download/v3.0.1.19/MyC_CS1.6_v3.0.1.19.exe)
 
 * [MyC CSGO v1.0.0.7](https://github.com/sniperzik/myc/releases/download/v1.0.0.7/MyC_CSGO_v1.0.0.7.exe)
 
