@@ -1,3 +1,6 @@
+-- v3.0.1.19 -------
+ * Minor installer fixes
+ 
 -- v3.0.1.18 -------
  * Updated MyC Updater
  * Updated MyC Cleaner
