@@ -81,10 +81,10 @@ ShowInstDetails show
 !define MUI_COMPONENTSPAGE_NODESC
 !define MUI_CUSTOMFUNCTION_GUIINIT onGUIInit ; Aero
 
-;!insertmacro MUI_PAGE_WELCOME ;## NSIS 3.0+ Broken Macros
+!insertmacro MUI_PAGE_WELCOME ;## NSIS 3.0+ Broken Macros
 !insertmacro MUI_PAGE_LICENSE "7z Installer Files\MyC_${APPGAME}_License.txt"
-;!insertmacro MUI_PAGE_README "Installer Files\MyC_${APPGAME}_Readme.txt"
-;!insertmacro MUI_PAGE_CHANGELOG "Installer Files\MyC_${APPGAME}_ChangeLog.log"
+;!insertmacro MUI_PAGE_README "7z Installer Files\MyC_${APPGAME}_Readme.txt"
+;!insertmacro MUI_PAGE_CHANGELOG "7z Installer Files\MyC_${APPGAME}_ChangeLog.log"
 !insertmacro MUI_PAGE_COMPONENTS
 !insertmacro MUI_PAGE_DIRECTORY
 !insertmacro MUI_PAGE_INSTFILES
@@ -97,7 +97,7 @@ ShowInstDetails show
 	!define MUI_FINISHPAGE_SHOWREADME_NOTCHECKED
 	!define MUI_FINISHPAGE_SHOWREADME_TEXT "Show Readme"
 	!define MUI_FINISHPAGE_SHOWREADME_FUNCTION "RShortCuts"
-;!insertmacro MUI_PAGE_FINISH ;## NSIS 3.0+ Broken Macros
+!insertmacro MUI_PAGE_FINISH ;## NSIS 3.0+ Broken Macros
 
 !insertmacro MUI_UNPAGE_CONFIRM
 !insertmacro MUI_UNPAGE_INSTFILES

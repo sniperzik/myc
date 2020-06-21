@@ -32,7 +32,7 @@ Unicode True
 !include "FileFunc.nsh"
 
 ; Define your application name
-!define APPVERS "3.0.1.18" ; VERSION 
+!define APPVERS "3.0.1.19" ; VERSION 
 !define APPNAME "MyC CS1.6"
 !define APPGAME "CS1.6" ; To Use for all files. ${APPGAME}
 !define APPNAMEANDVERSION "${APPNAME} v${APPVERS}"
@@ -42,7 +42,7 @@ Unicode True
 !define APPPUBLISHER "MyC Project"
 !define APPSIZE "46183" ; MB : Bytes (45.1 x 1024 Bytes = 46182.4) ~ 46183 Bytes
 
-VIProductVersion "3.0.1.18" ; VERSION - No Spaces!!!
+VIProductVersion "3.0.1.19" ; VERSION - No Spaces!!!
 VIAddVersionKey "ProductName" "${APPNAME}"
 VIAddVersionKey "Comments" ""
 VIAddVersionKey "CompanyName" "${APPWEB} ${APPYEAR} by ${APPAUTHOR}"
@@ -97,7 +97,7 @@ ShowInstDetails show
 	!define MUI_FINISHPAGE_SHOWREADME_NOTCHECKED
 	!define MUI_FINISHPAGE_SHOWREADME_TEXT "Show Readme"
 	!define MUI_FINISHPAGE_SHOWREADME_FUNCTION "RShortCuts"
-;!insertmacro MUI_PAGE_FINISH ;## NSIS 3.0+ Broken Macros
+!insertmacro MUI_PAGE_FINISH ;## NSIS 3.0+ Broken Macros
 
 !insertmacro MUI_UNPAGE_CONFIRM
 !insertmacro MUI_UNPAGE_INSTFILES
