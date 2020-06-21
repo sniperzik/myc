@@ -81,7 +81,7 @@ ShowInstDetails show
 !define MUI_COMPONENTSPAGE_NODESC
 !define MUI_CUSTOMFUNCTION_GUIINIT onGUIInit ; Aero
 
-;!insertmacro MUI_PAGE_WELCOME ;## NSIS 3.0+ Broken Macros
+!insertmacro MUI_PAGE_WELCOME ;## NSIS 3.0+ Broken Macros
 !insertmacro MUI_PAGE_LICENSE "7z Installer Files\MyC_${APPGAME}_License.txt"
 ;!insertmacro MUI_PAGE_README "Installer Files\MyC_${APPGAME}_Readme.txt"
 ;!insertmacro MUI_PAGE_CHANGELOG "Installer Files\MyC_${APPGAME}_ChangeLog.log"
