@@ -1,18 +1,25 @@
 
  - Check Latest Version @ http://www.Myc.Lv -
  
--- v1.0.0.7 ------- 
+-- v1.0.0.8 -------
+ * Added r_cleardecals when shooting
+ * Removed cl_clanid from Engine_User
+   ***NOTE: r_cleardecals removes blood splatters,
+   bullet holes and explosion from nades
+   for example on wall and ground surfaces
+
+-- v1.0.0.7 -------
  * Added Jumpthrow
  * Added r_cleardecals when moving forward
  * Updated MVP volume
  * Minor installer fixes
 
--- v1.0.0.6 ------- 
+-- v1.0.0.6 -------
  * Fixed Check if csgo.exe process exist
  * Updated MyC Updater
  * Updated MyC Cleaner
 
--- v1.0.0.5 ------- 
+-- v1.0.0.5 -------
  * Added Volume alias
  * Updated In-game Music values
  * Updated Rate to 786432 value
