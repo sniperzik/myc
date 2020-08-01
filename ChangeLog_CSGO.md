@@ -1,3 +1,10 @@
+ -- v1.0.0.8 -------
+ * Added r_cleardecals when shooting
+ * Removed cl_clanid from Engine_User
+   ***NOTE: r_cleardecals removes blood splatters,
+   bullet holes and explosion from nades
+   for example on wall and ground surfaces
+
  -- v1.0.0.7 ------- 
  * Added Jumpthrow
  * Added r_cleardecals when moving forward
