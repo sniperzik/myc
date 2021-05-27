@@ -1,0 +1,14 @@
+How to uninstall Microsoft Edge (Chromium) using Command Prompt
+[Run As administrator]
+
+
+
+
+
+
+cd %PROGRAMFILES(X86)%\Microsoft\Edge\Application\8*\Installer
+
+setup --uninstall --force-uninstall --system-level
+
+
+**Also Check Privatezilla and Debotnet for telemetry & cache.
