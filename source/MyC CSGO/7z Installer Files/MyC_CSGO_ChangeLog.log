@@ -1,6 +1,15 @@
 
  - Check Latest Version @ http://www.Myc.Lv -
- 
+
+-- v1.0.0.9 -------
+ * Added Vision & Lightning alias
+ * Added video.txt Video performance settings 
+   ***NOTE: Graphic settings can be found in "C:\Program Files (x86)\Steam\userdata\**ID***\730\local\cfg\video.txt",
+   Remember to change to your resolution
+   Width: "setting.defaultres" "1280",
+   Height: "setting.defaultresheight" "960"
+   Remember to change it to Read-Only after changes have been made to save your settings.
+
 -- v1.0.0.8 -------
  * Added r_cleardecals when shooting
  * Removed cl_clanid from Engine_User

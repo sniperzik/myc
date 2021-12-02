@@ -40,6 +40,7 @@
 	- MyC Cleaner
 	- High FPS Configs
 	- SetLaunchOptions.txt for Steam
+	- Video.txt Video performance settings 
 	- I-Net Connection Configs
 		+ C4 Located Script
 		+ Buy Script
@@ -47,6 +48,7 @@
 		+ Microphone Alias
 		+ Volume Alias (.0 to .9 in console)
 		+ Jumpthrow Script
+		+ Vision & Lightning alias
 	
 	--- Included
 	
