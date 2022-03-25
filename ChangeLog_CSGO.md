@@ -1,9 +1,9 @@
  -- v1.0.0.8 -------
  * Added r_cleardecals when shooting
  * Removed cl_clanid from Engine_User
-   ***NOTE: r_cleardecals removes blood splatters,
-   bullet holes and explosion from nades
-   for example on wall and ground surfaces
+> NOTE: r_cleardecals removes blood splatters,
+> bullet holes and explosion from nades
+> for example on wall and ground surfaces
 
  -- v1.0.0.7 ------- 
  * Added Jumpthrow
@@ -22,18 +22,18 @@
  * Updated Rate to 786432 value
  * Updated Engine_MyC_Default.cfg Cvars
  * Updated MyC Updater (SSL)
-   ***NOTE: New graphic settings could be found in "C:\Program Files (x86)\Steam\userdata\**ID***\730\local\cfg\video.txt",
-   you can use ours as an example for high FPS: https://raw.githubusercontent.com/sniperzik/myc/master/video.txt
-   Remember to change it to Read-Only after changes have been made to save your settings.
+> NOTE: New graphic settings could be found in "C:\Program Files (x86)\Steam\userdata\**ID***\730\local\cfg\video.txt",
+> you can use ours as an example for high FPS: https://raw.githubusercontent.com/sniperzik/myc/master/video.txt
+> Remember to change it to Read-Only after changes have been made to save your settings.
  
 -- v1.0.0.4 -------
  * Removed Radar Overviews,
    because of Steam file system bug.
-   ***NOTE: You can still re-validate
-   your csgo through the Steam or you can
-   download Default Radar Overviews: https://github.com/sniperzik/myc/raw/master/Default.Radar.Overviews.zip
-   or Radar Overviews with Callouts: https://github.com/sniperzik/myc/raw/master/Radar.Overviews.with.Callouts.zip
-   and just copy, paste them into your "C:\Steam\SteamApps\common\Counter-Strike Global Offensive" Folder.
+> NOTE: You can still re-validate
+> your csgo through the Steam or you can
+> download Default Radar Overviews: https://github.com/sniperzik/myc/raw/master/Default.Radar.Overviews.zip
+> or Radar Overviews with Callouts: https://github.com/sniperzik/myc/raw/master/Radar.Overviews.with.Callouts.zip
+> and just copy, paste them into your "C:\Steam\SteamApps\common\Counter-Strike Global Offensive" Folder.
  
 -- v1.0.0.3 -------
  * Added Microphone alias
