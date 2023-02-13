@@ -2,7 +2,7 @@
  - Check Latest Version @ http://www.Myc.Lv -
 
 -- v1.0.0.9 -------
- * Added Vision & Lightning alias
+ * Updated Engine_MyC_Default.cfg Cvars
  * Added video.txt Video performance settings 
    ***NOTE: Graphic settings can be found in "C:\Program Files (x86)\Steam\userdata\**ID***\730\local\cfg\video.txt",
    Remember to change to your resolution

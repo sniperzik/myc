@@ -36,7 +36,7 @@ Unicode True
 !define APPNAME "MyC CSGO"
 !define APPGAME "CSGO" ; To Use for all files. ${APPGAME}
 !define APPNAMEANDVERSION "${APPNAME} v${APPVERS}"
-!define APPYEAR "© 2022"
+!define APPYEAR "© 2023"
 !define APPWEB "MyC.Lv"
 !define APPAUTHOR "Sn^"
 !define APPPUBLISHER "MyC Project"
