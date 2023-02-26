@@ -48,7 +48,6 @@
 		+ Microphone Alias
 		+ Volume Alias (.0 to .9 in console)
 		+ Jumpthrow Script
-		+ Vision & Lightning alias
 	
 	--- Included
 	
