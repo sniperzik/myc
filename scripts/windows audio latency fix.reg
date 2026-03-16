@@ -1,0 +1,30 @@
+Windows Registry Editor Version 5.00
+
+; Created by Sn^ https://myc.lv (GitHub https://github.com/sniperzik/myc/tree/master/scripts)
+;
+; Clean install audio drivers
+; Disable unused audio in Device Manager (NVIDIA High Definition Audio)
+; Disable Power Management for Network, USB, Sound devices 
+; Disable “allow device to sleep” in audio driver
+; Disable HPET (bcdedit /deletevalue useplatformclock)
+; Use Ultimate Performance Plan
+; Min CPU = 100%, PCIe power saving = Off
+; Check LatencyMon ISR/DPC count
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Audio]
+"DisableProtectedAudioDG"=dword:00000001
+"PerformanceIdleTime"=dword:00000000
+"MMCSSPriority"=dword:00000006
+"SystemResponsiveness"=dword:00000010
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile]
+"NetworkThrottlingIndex"=dword:ffffffff
+"SystemResponsiveness"=dword:00000010
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Audio]
+"Scheduling Category"="High"
+"SFIO Priority"="High"
+"BackgroundOnly"="False"
+"Priority"=dword:00000008
+"Clock Rate"=dword:00005000
+
